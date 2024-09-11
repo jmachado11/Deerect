@@ -1,6 +1,10 @@
 from bs4 import BeautifulSoup
+from flask import Flask, request, jsonify
 import requests
 import json
+
+
+app = Flask(__name__)
 
 def scrape_posts(input_search):
     if isinstance(input_search, str):
@@ -118,4 +122,19 @@ def scrape_posts(input_search):
         print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
 
 #test call with Address Strings and zip codes working fine
-scrape_posts("San Francisco")
+#scrape_posts("San Francisco")
+
+def api_scrape():
+    input_search = request.args.get('q')
+    if not input_search:
+        return jsonify({"error": "Please provide a search query (q parameter)."}), 400
+
+    try:
+        scraped_data = scrape_posts(input_search)
+        return jsonify(scraped_data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
