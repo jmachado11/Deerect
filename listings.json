@@ -1,0 +1,172 @@
+[
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94117",
+            "streetAddress": "Haight St # 222"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.770",
+            "longitude": "-122.445"
+        },
+        "url": "https://www.taxliens.com/address/Haight-St--222-San-Francisco-CA-94117/62477911_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94114",
+            "streetAddress": "Roosevelt Way"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.763",
+            "longitude": "-122.444"
+        },
+        "url": "https://www.taxliens.com/address/Roosevelt-Way-San-Francisco-CA-94114/62472330_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94134",
+            "streetAddress": "Felton St"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.729",
+            "longitude": "-122.407"
+        },
+        "url": "https://www.taxliens.com/address/Felton-St-San-Francisco-CA-94134/62472407_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94114",
+            "streetAddress": "Corbett Ave"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.761",
+            "longitude": "-122.444"
+        },
+        "url": "https://www.taxliens.com/address/Corbett-Ave-San-Francisco-CA-94114/62472498_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94134",
+            "streetAddress": "Madison St"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.726",
+            "longitude": "-122.423"
+        },
+        "url": "https://www.taxliens.com/address/Madison-St-San-Francisco-CA-94134/62472698_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94112",
+            "streetAddress": "Benton Ave"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.733",
+            "longitude": "-122.426"
+        },
+        "url": "https://www.taxliens.com/address/Benton-Ave-San-Francisco-CA-94112/62471445_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94103",
+            "streetAddress": "Mission St # 108"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.767",
+            "longitude": "-122.419"
+        },
+        "url": "https://www.taxliens.com/address/Mission-St--108-San-Francisco-CA-94103/62472392_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94102",
+            "streetAddress": "Turk St"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.784",
+            "longitude": "-122.410"
+        },
+        "url": "https://www.taxliens.com/address/Turk-St-San-Francisco-CA-94102/62472475_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94107",
+            "streetAddress": "King St Unit 772"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.778",
+            "longitude": "-122.393"
+        },
+        "url": "https://www.taxliens.com/address/King-St-Unit-772-San-Francisco-CA-94107/62472546_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94118",
+            "streetAddress": "N Willard St"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.775",
+            "longitude": "-122.456"
+        },
+        "url": "https://www.taxliens.com/address/N-Willard-St-San-Francisco-CA-94118/62472776_lid"
+    }
+]

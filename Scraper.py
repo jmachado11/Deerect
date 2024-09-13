@@ -3,15 +3,12 @@ from flask import Flask, request, jsonify
 import requests
 import json
 
-
-app = Flask(__name__)
-
 def scrape_posts(input_search):
     if isinstance(input_search, str):
         input_search = input_search.replace(' ', '+')
     
     url = f'https://www.taxliens.com/listing/search.html?q={input_search}'
-    #print(url)
+    print(url)
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
@@ -30,11 +27,63 @@ def scrape_posts(input_search):
             Div2 = div1.find('div')
             info = Div2.find('div', class_='listingInfo')
             conInfo = info.find('div',class_ ='conListingInfo')
+            print("coninfo found \n")
+            script = conInfo.find('script', type='application/ld+json')
+            if script:
+                # Extract the JSON content
+                print("script found")
+                json_text = script.string
+                if json_text:
+                    try:
+                        # Parse the JSON content
+                        json_data = json.loads(json_text)
+                        print(json.dumps(json_data, indent=4))  # Pretty print JSON data
+                        listings_data.append(json_data)
+                        
+                    except json.JSONDecodeError as e:
+                        print(f"Error decoding JSON: {e}")
+                        return None
+                else:
+                    print("Script tag is empty.")
+                    return None
+            else:
+                print("Script tag with type 'application/ld+json' not found.")
+                return None
+        
 
+        with open('listings.json', 'w') as json_file:
+            json.dump(listings_data, json_file, indent=4)
+            print("Data successfully scraped and saved to listings.json")
+            return listings_data
             #get address here
+    else:
+        print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+
+
+
+app = Flask(__name__)
+@app.route('/api_scrape', methods=['GET'])
+
+def api_scrape():
+    input_search = request.args.get('q')
+    if not input_search:
+        return jsonify({"error": "Please provide a search query (q parameter)."}), 400
+
+    try:
+        scraped_data = scrape_posts(input_search)
+        return jsonify(scraped_data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+#test call
+#scrape_posts("San Francisco")
+'''
             address_tag = conInfo.find('div', class_='address')
             if address_tag:
-                address = address_tag.find('a', class_ = 'address')
+                address = address_tag.find('span', class_ = 'address')
                 spans = address.find_all('span')
                 span_texts = [span.get_text(strip=True) for span in spans]
                 listing_data['address'] = ' '.join(span_texts)
@@ -121,20 +170,11 @@ def scrape_posts(input_search):
     else:
         print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
 
-#test call with Address Strings and zip codes working fine
-#scrape_posts("San Francisco")
-
-def api_scrape():
-    input_search = request.args.get('q')
-    if not input_search:
-        return jsonify({"error": "Please provide a search query (q parameter)."}), 400
-
-    try:
-        scraped_data = scrape_posts(input_search)
-        return jsonify(scraped_data)
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+'''
+
+'''
+
+
+'''
