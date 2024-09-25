@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 from flask import Flask, request, jsonify
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
 
 def scrape_posts(input_search):
     if isinstance(input_search, str):
@@ -37,7 +40,7 @@ def scrape_posts(input_search):
                     try:
                         # Parse the JSON content
                         json_data = json.loads(json_text)
-                        print(json.dumps(json_data, indent=4))  # Pretty print JSON data
+                        #print(json.dumps(json_data, indent=4))  # Pretty print JSON data
                         listings_data.append(json_data)
                         
                     except json.JSONDecodeError as e:
@@ -61,6 +64,73 @@ def scrape_posts(input_search):
 
 
 
+def scrape_protected_content(search_url):
+    # Start a session to persist cookies
+    load_dotenv()
+    session = requests.Session()
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Referer': 'https://www.taxliens.com/login.html',
+        'Origin': 'https://www.taxliens.com',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
+    username = os.environ.get('USERNAME')
+    password = os.environ.get('PASSWORD')
+    # Login URL and payload
+    login_url = 'https://www.taxliens.com/login.html'
+    login_payload = {
+        'key': f'{username}',
+        'password': f'{password}',
+        'referralUrl': 'https://www.taxliens.com/',
+        'serviceProviderName': 'fdc',
+        'oldLegacyDomainName': 'www.foreclosurefreesearch.com',
+        'loginMethod': 'username_password'
+    }
+    
+    # Send login request
+    login_response = session.post(login_url, data=login_payload, headers= headers)
+    # Check login
+    if login_response.status_code == 200:
+        print('Logged in successfully!')
+        #example url - will be gotten from listings.json links
+        #search_url = f'https://www.taxliens.com/address/Gardenside-Dr-Apt-312-San-Francisco-CA-94131/62485128_lid'
+        response = session.get(search_url, headers=headers)
+        
+        if response.status_code == 200:
+            paid_data={}
+            soup = BeautifulSoup(response.content, 'html.parser')
+            div1 = soup.find('div', class_= 'container mt-4')
+            div2 = div1.find('div', class_ = 'row')
+            div3 = div2.find('div', class_= 'col-lg-12')
+            div4 = div3.find('div', id= 'bootstrap-details')
+            div5 = div4.find('div', class_= 'row')
+            div6 = div5.find('div', class_= 'col-md-8')
+            div7 = div6.find('div', id= 'additional_info')
+            div8 = div7.find('ul', class_ = 'list-unstyled attributegroup two-column')
+            li_elements = div8.find_all('li')
+            for li in li_elements:
+                spans = li.find_all('span')
+                if len(spans) == 0:
+                    continue
+                label_text = spans[0].get_text(strip=True)  # First span is the label
+                value_text = spans[-1].get_text(strip=True)  # Second span is the value
+                paid_data[label_text] = value_text
+            
+            #print(paid_data)
+            with open('paid.json', 'w') as json_file:
+                return (paid_data)
+                #json.dump(paid_data, json_file, indent=4)
+                print("Data successfully scraped and saved to paid.json")
+        else:
+            print(f"Failed to retrieve search page. Status code: {response.status_code}")
+    else:
+        print(f"Failed to login. Status code: {login_response.status_code}")
+
+
+
+
 app = Flask(__name__)
 @app.route('/api_scrape', methods=['GET'])
 
@@ -68,113 +138,16 @@ def api_scrape():
     input_search = request.args.get('q')
     if not input_search:
         return jsonify({"error": "Please provide a search query (q parameter)."}), 400
-
     try:
         scraped_data = scrape_posts(input_search)
+        for item in scraped_data:
+            url = item.get('url')
+            if url:
+                paid_data =  scrape_protected_content(url)
+                item.update(paid_data)
         return jsonify(scraped_data)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
-#test call
-#scrape_posts("San Francisco")
-'''
-            address_tag = conInfo.find('div', class_='address')
-            if address_tag:
-                address = address_tag.find('span', class_ = 'address')
-                spans = address.find_all('span')
-                span_texts = [span.get_text(strip=True) for span in spans]
-                listing_data['address'] = ' '.join(span_texts)
-            
-            #get whole property price here
-            price_tag = conInfo.find('div', class_= 'savePrice')
-            if price_tag:
-                div1 = price_tag.find('span', class_= 'tdprice')
-                if div1:
-                    price = div1.find('strong')
-                    if price:
-                        price_num = price.get_text(strip = True)
-                        #print('price', price_num)
-                        listing_data['price'] = price_num
-                    else:
-                        listing_data['price'] = 'price not listed'
-                else:
-                    listing_data['price'] = 'price not listed'
-            else:
-                listing_data['price'] = 'price not listed'
-
-            #rental value and link to paid info
-            rental_price_tag = info.find('div', class_= 'contViewDetails text-end d-none d-sm-block')
-            if rental_price_tag:
-                div1 = rental_price_tag.find('div', class_= 'rentEstimate')
-                rental_price = div1.get_text(strip = True)
-                listing_data['rental value'] = rental_price
-
-
-                div2 = rental_price_tag.find('div', class_= 'contViewDetailsBtn')
-                link = div2.find('a')
-                link_contents = 'https://www.taxliens.com' + link['href']
-                listing_data['See Details Link'] = link_contents
-                
-                #print('link:', link_contents)
-                #print('rental price: ', rental_price)
-
-            #description and sqftage
-            description_tag = info.find('div', class_= 'bedbathsizetype d-none d-sm-block')
-            if description_tag:
-                bedroom_div = description_tag.find('div', class_='fl bedroomsbox')
-                bathroom_div = description_tag.find('div', class_='fl barhroomsbox')
-                size_div = description_tag.find('div', class_='fl sizebox d-none d-sm-block')
-
-                # Extracting text from the elements here
-                bedroom_text = bedroom_div.get_text(strip=True) if bedroom_div else ''
-                if bedroom_text == "":
-                    bedroom_text = "beds"
-                bathroom_text = bathroom_div.get_text(strip=True) if bathroom_div else ''
-                if bathroom_text == "":
-                    bathroom_text = "baths"
-                size_text = size_div.get_text(strip=True).replace(',', '') if size_div else ''
-                if size_text == "":
-                    size_text = "square footage not yet listed"
-
-                desc = f"{bedroom_text}, {bathroom_text}, {size_text}"
-                #print(desc)
-                listing_data['Description'] = desc
-
-            #saving image
-            image_tag = Div2.find('div', class_= 'tdListingPhoto fl')
-            if image_tag:
-                #print('tdlisting photo div found:')
-                div1 = image_tag.find('div', class_= 'conListingPhoto')
-                #print('con listingphoto found')
-                photo = div1.find('img')
-                #print('pic found')
-                if photo and 'src' in photo.attrs:
-                    img_src = photo['src']
-                    
-                    # modify url if necessary, since it needs the http
-                    if img_src.startswith('//'):
-                        img_src = 'http:' + img_src
-                        #print(img_src)
-                        listing_data['Photograph'] = img_src
-
-            listings_data.append(listing_data) #add in entries at the end of each lop
-            
-
-        with open('listings.json', 'w') as json_file:
-            json.dump(listings_data, json_file, indent=4)
-
-        print("Data successfully scraped and saved to listings.json")
-    else:
-        print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
-
-
-
-'''
-
-'''
-
-
-'''
+    app.run(host='127.0.0.1', debug=True, port=5001)

@@ -4,169 +4,169 @@
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94117",
-            "streetAddress": "Haight St # 222"
+            "postalCode": "94507",
+            "streetAddress": "Alamo Springs Dr"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.770",
-            "longitude": "-122.445"
+            "latitude": "37.846",
+            "longitude": "-122.014"
         },
-        "url": "https://www.taxliens.com/address/Haight-St--222-San-Francisco-CA-94117/62477911_lid"
+        "url": "https://www.taxliens.com/address/Alamo-Springs-Dr-Alamo-CA-94507/62494038_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94114",
-            "streetAddress": "Roosevelt Way"
+            "postalCode": "94507",
+            "streetAddress": "Via Serena"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.763",
-            "longitude": "-122.444"
+            "latitude": "37.845",
+            "longitude": "-122.030"
         },
-        "url": "https://www.taxliens.com/address/Roosevelt-Way-San-Francisco-CA-94114/62472330_lid"
+        "url": "https://www.taxliens.com/address/Via-Serena-Alamo-CA-94507/62474181_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94134",
-            "streetAddress": "Felton St"
+            "postalCode": "94507",
+            "streetAddress": "Lackland Dr"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.729",
-            "longitude": "-122.407"
+            "latitude": "37.848",
+            "longitude": "-121.966"
         },
-        "url": "https://www.taxliens.com/address/Felton-St-San-Francisco-CA-94134/62472407_lid"
+        "url": "https://www.taxliens.com/address/Lackland-Dr-Alamo-CA-94507/62382258_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94114",
-            "streetAddress": "Corbett Ave"
+            "postalCode": "94507",
+            "streetAddress": "Ina Dr"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.761",
-            "longitude": "-122.444"
+            "latitude": "37.857",
+            "longitude": "-122.025"
         },
-        "url": "https://www.taxliens.com/address/Corbett-Ave-San-Francisco-CA-94114/62472498_lid"
+        "url": "https://www.taxliens.com/address/Ina-Dr-Alamo-CA-94507/62264020_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94134",
-            "streetAddress": "Madison St"
+            "postalCode": "94507",
+            "streetAddress": "Alta Sierra Pl"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.726",
-            "longitude": "-122.423"
+            "latitude": "37.849",
+            "longitude": "-122.004"
         },
-        "url": "https://www.taxliens.com/address/Madison-St-San-Francisco-CA-94134/62472698_lid"
+        "url": "https://www.taxliens.com/address/Alta-Sierra-Pl-Alamo-CA-94507/61992302_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94112",
-            "streetAddress": "Benton Ave"
+            "postalCode": "94507",
+            "streetAddress": "Cross Rd"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.733",
-            "longitude": "-122.426"
+            "latitude": "37.842",
+            "longitude": "-121.988"
         },
-        "url": "https://www.taxliens.com/address/Benton-Ave-San-Francisco-CA-94112/62471445_lid"
+        "url": "https://www.taxliens.com/address/Cross-Rd-Alamo-CA-94507/62494126_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94103",
-            "streetAddress": "Mission St # 108"
+            "postalCode": "94507",
+            "streetAddress": "Danville Blvd"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.767",
-            "longitude": "-122.419"
+            "latitude": "37.840",
+            "longitude": "-122.024"
         },
-        "url": "https://www.taxliens.com/address/Mission-St--108-San-Francisco-CA-94103/62472392_lid"
+        "url": "https://www.taxliens.com/address/Danville-Blvd-Alamo-CA-94507/62415107_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94102",
-            "streetAddress": "Turk St"
+            "postalCode": "94507",
+            "streetAddress": "South Ct"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.784",
-            "longitude": "-122.410"
+            "latitude": "37.840",
+            "longitude": "-122.037"
         },
-        "url": "https://www.taxliens.com/address/Turk-St-San-Francisco-CA-94102/62472475_lid"
+        "url": "https://www.taxliens.com/address/South-Ct-Alamo-CA-94507/62264017_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94107",
-            "streetAddress": "King St Unit 772"
+            "postalCode": "94507",
+            "streetAddress": "Waverly Ct"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.778",
-            "longitude": "-122.393"
+            "latitude": "37.853",
+            "longitude": "-122.003"
         },
-        "url": "https://www.taxliens.com/address/King-St-Unit-772-San-Francisco-CA-94107/62472546_lid"
+        "url": "https://www.taxliens.com/address/Waverly-Ct-Alamo-CA-94507/62092312_lid"
     },
     {
         "@context": "http://schema.org",
         "@type": "SingleFamilyResidence",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "San Francisco",
+            "addressLocality": "Alamo",
             "addressRegion": "CA",
-            "postalCode": "94118",
-            "streetAddress": "N Willard St"
+            "postalCode": "94507",
+            "streetAddress": "Stonecastle Ct"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "37.775",
-            "longitude": "-122.456"
+            "latitude": "37.871",
+            "longitude": "-122.043"
         },
-        "url": "https://www.taxliens.com/address/N-Willard-St-San-Francisco-CA-94118/62472776_lid"
+        "url": "https://www.taxliens.com/address/Stonecastle-Ct-Alamo-CA-94507/61880804_lid"
     }
 ]

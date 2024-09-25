@@ -1,7 +1,7 @@
 import requests
 
 # Send request to Flask API
-response = requests.get("http://127.0.0.1:5000/api_scrape?q=San+Francisco")
+response = requests.get("http://127.0.0.1:5001/api_scrape?q=94507")
 
 # Check if the response is successful
 if response.status_code == 200:
@@ -13,3 +13,5 @@ if response.status_code == 200:
     print("Data scraped and saved to scraped_data.json")
 else:
     print(f"Error: {response.status_code}, {response.text}")
+
+    
