@@ -1,0 +1,81 @@
+type;price;address;bedrooms;bathrooms;square footage;property type;Day(s) On Site:;Trustee Name:;Trustee Address:;Trustee City:;Trustee State:;Trustee Zip:;Trustee Phone:;Court Name:;Court Address:
+BankruptcyNEW;821347;Weed Ave Stamford CT 06902;3bed;2.5bath;2,732sqft.;Single-Family;1;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;513857;Culloden Rd Stamford CT 06902;3bed;1bath;1,150sqft.;Single-Family;4;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Hamilton Ct # A Stamford CT 06902;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;7;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;2087100;Ocean Dr W Stamford CT 06902;5bed;4.5bath;4,092sqft.;Single-Family;14;;;;;;;;
+Bankruptcy;Estimation Coming Soon;W Broad St # 402 Stamford CT 06902;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;26;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;245000;Hazel St Stamford CT 06902;9bed;5bath;4,104sqft.;Multi-Family;3;;;;;;;;
+Bankruptcy;Estimation Coming Soon;W Broad St # 622 Stamford CT 06902;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;6;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;233975;Strawberry Hill Ct Apt 6e Stamford CT 06902;1bed;1bath;861sqft.;Condo;11;;;;;;;;
+Preforeclosure;648000;Lawn Ave Stamford CT 06902;5bed;2bath;2,125sqft.;Multi-Family;21;;;;;;;;
+Bankruptcy;873389;Woodridge Dr S Stamford CT 06902;3bed;2bath;1,516sqft.;Single-Family;27;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+PreforeclosureNEW;351200;Conlon St Bristol CT 06010;7bed;4bath;3,425sqft.;Multi-Family;1;Brock & Scott;;;;;(910) 392-4988;;
+Preforeclosure;231840;Benham St Bristol CT 06010;3bed;1bath;974sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;259210;Wolcott St Bristol CT 06010;2bed;1bath;1,168sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;181390;Beths Ave Apt 100 Bristol CT 06010;2bed;2bath;900sqft.;Condo;4;;;;;;;;
+Preforeclosure;308700;Page Ave Bristol CT 06010;2bed;2bath;1,297sqft.;Single-Family;4;;;;;;;;
+PreforeclosureNEW;257292;Earl St Bristol CT 06010;3bed;1bath;960sqft.;Single-Family;1;Brock & Scott;;;;;(910) 392-4988;;
+Preforeclosure;411392;Merriman St Bristol CT 06010;3bed;2bath;1,815sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;266750;Broad St Bristol CT 06010;2bed;2bath;1,310sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;345015;Main St Bristol CT 06010;15bed;15bath;9,981sqft.;Commercial;4;;;;;;;;
+Bankruptcy;227234;Irving St Apt 28 Bristol CT 06010;2bed;1.5bath;1,040sqft.;Condo;4;BONNIE C. MANGAN;1050 Sullivan Ave Ste A3;South Windsor;CT;06074;(860) 644-4204;District CT, Division 2;450 Main Street, 7th Floor
+Preforeclosure;337500;George St New Haven CT 06511;5bed;3bath;3,310sqft.;Multi-Family;4;;;;;;;;
+Preforeclosure;196000;Gilbert Ave New Haven CT 06511;6bed;3bath;3,554sqft.;Multi-Family;21;VESSICCHIO and SMITH LLC;15 MAIDEN LANE;NORTH HAVEN;CT;06473;(203) 907-4030;;
+Preforeclosure;486370;Crown St New Haven CT 06511;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Property Type Coming Soon;32;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Winchester Ave New Haven CT 06511;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;33;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 3;157 Church Street, 18th Floor
+Preforeclosure;199900;Thompson St New Haven CT 06511;2bed;2bath;2,006sqft.;Multi-Family;39;;;;;;;;
+Preforeclosure;265920;Elm St New Haven CT 06511;4bed;2bath;1,866sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;487000;Crown St New Haven CT 06511;4bed;4bath;3,280sqft.;Multi-Family;32;;;;;;;;
+Preforeclosure;274800;Sherman Pkwy New Haven CT 06511;6bed;2bath;3,070sqft.;Multi-Family;32;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Sherman Ave # 1 New Haven CT 06511;6bed;3bath;3,972sqft.;Multi-Family;34;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 3;157 Church Street, 18th Floor
+Preforeclosure;222600;Chapel St New Haven CT 06511;5bed;3bath;2,511sqft.;Multi-Family;42;PARRETT PORTO PARESE AND COLWELL P C;2319 WHITNEY AVE;HAMDEN;CT;06514;(203) 281-2700;;
+BankruptcyNEW;274312;Prospect Ave West Haven CT 06516;3bed;1bath;1,340sqft.;Single-Family;1;;;;;;;District CT, Division 3;157 Church Street, 18th Floor
+Preforeclosure;288817;Chris Jon Cir West Haven CT 06516;3bed;2bath;1,080sqft.;Single-Family;4;;;;;;;;
+Bankruptcy;183000;2nd Ave West Haven CT 06516;3bed;1bath;1,059sqft.;Single-Family;9;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;382700;Collis St West Haven CT 06516;5bed;Bathrooms Coming Soon;2,466sqft.;Multi-Family;13;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;352560;Alexander Dr West Haven CT 06516;3bed;2bath;1,512sqft.;Single-Family;15;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Fixer UpperNEW;370000;Rockefeller Ave West Haven CT 06516;2bed;1.1bath;2,174sqft.;Single-Family;2;;;;;;;;
+Bankruptcy;330285;Roosevelt Ave West Haven CT 06516;3bed;1bath;1,236sqft.;Single-Family;8;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;385140;Sundance Cir West Haven CT 06516;3bed;2.5bath;1,356sqft.;Single-Family;12;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;404005;Noble St West Haven CT 06516;3bed;1.5bath;1,959sqft.;Single-Family;14;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Preforeclosure;Estimation Coming Soon;Linda St W Haven CT 06516;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;18;JEROME A LACOBELLE LLC;537 WASHINGTON AVE;WEST HAVEN;CT;06516;(203) 934-6651;;
+PreforeclosureNEW;591600;Harding Pl Danbury CT 06810;4bed;2bath;2,288sqft.;Multi-Family;2;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Abbey Ln Unit 1105 Danbury CT 06810;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;6;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;414810;Woodside Ave Danbury CT 06810;4bed;2bath;2,128sqft.;Single-Family;32;;;;;;;;
+Bankruptcy;494010;Crows Nest Ln Unit 19 Danbury CT 06810;2bed;2.5bath;1,805sqft.;Condo;36;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Bankruptcy;2028000;Deer Hill Ave Danbury CT 06810;5bed;3.5bath;7,408sqft.;Multi-Family;41;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;502000;Stone St Danbury CT 06810;5bed;2bath;2,720sqft.;Multi-Family;3;;;;;;;;
+Bankruptcy;350105;Mountainville Rd Danbury CT 06810;3bed;1bath;1,071sqft.;Single-Family;25;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;474952;Sienna Dr Danbury CT 06810;2bed;3.5bath;1,803sqft.;Condo;35;;;;;;;;
+Bankruptcy;457112;Somers St Danbury CT 06810;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;40;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Bankruptcy;Estimation Coming Soon;Town Hill Ave # B Danbury CT 06810;6bed;4bath;2,012sqft.;Commercial;48;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 5;915 Lafayette Blvd
+Bankruptcy;167110;Reservoir Ave Bridgeport CT 06606;3bed;1bath;1,208sqft.;Single-Family;3;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 5;915 Lafayette Blvd
+Fixer Upper;145000;Cherry Hill Dr.2 Bridgeport CT 06606;2bed;1bath;Square Footage Coming Soon;Commercial;7;;;;;;;;
+Preforeclosure;198135;Truman St Bridgeport CT 06606;3bed;1bath;1,248sqft.;Single-Family;10;;;;;;;;
+Preforeclosure;181220;Lakeside Dr Bridgeport CT 06606;3bed;1bath;1,056sqft.;Single-Family;18;;;;;;;;
+Preforeclosure;266449;Westfield Ave Bridgeport CT 06606;4bed;3bath;1,660sqft.;Single-Family;18;;;;;;;;
+Bankruptcy;171743;Trumbull Ave Bridgeport CT 06606;3bed;2bath;1,635sqft.;Multi-Family;5;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 5;915 Lafayette Blvd
+Bankruptcy;Estimation Coming Soon;Vincellette St Bridgeport CT 06606;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;9;GEORGE I. ROUMELIOTIS;157 Church St Fl 19;New Haven;CT;06510;(203) 580-3355;District CT, Division 5;915 Lafayette Blvd
+Preforeclosure;Estimation Coming Soon;Vincellette St Bridgeport CT 06606;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Property Type Coming Soon;18;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Fairview Ave Bridgeport CT 06606;4bed;1bath;1,400sqft.;Single-Family;18;;;;;;;;
+Preforeclosure;211481;Garden Dr Bridgeport CT 06606;2bed;1bath;1,170sqft.;Single-Family;18;;;;;;;;
+Bankruptcy;416400;Wildflower Ln Middletown CT 06457;3bed;2.5bath;1,821sqft.;Single-Family;7;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;Estimation Coming Soon;Elm St # A Middletown CT 06457;8bed;4bath;3,190sqft.;Multi-Family;15;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;Estimation Coming Soon;Russett Ln Middletown CT 06457;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;20;KARA S. RESCIA;5104A Bigelow Cmns;Enfield;CT;06082;(860) 452-0052;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;323010;Delwood Ave Middletown CT 06457;3bed;2bath;1,037sqft.;Single-Family;51;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;Estimation Coming Soon;Plaza Dr Middletown CT 06457;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;64;KARA S. RESCIA;5104A Bigelow Cmns;Enfield;CT;06082;(860) 452-0052;District CT, Division 3;157 Church Street, 18th Floor
+Preforeclosure;176160;Burgundy Hill Ln Middletown CT 06457;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;14;;;;;;;;
+Preforeclosure;217305;Rising Trail Dr Middletown CT 06457;2bed;1.5bath;1,120sqft.;Condo;17;HALLORAN AND SAGE LLP;213 COURT STREET SUITE 205;MIDDLETOWN;CT;06457;(860) 346-8641;;
+Bankruptcy;Estimation Coming Soon;Plaza Dr Middletown CT 06457;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;43;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;328320;Durant St Middletown CT 06457;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;58;KARA S. RESCIA;5104A Bigelow Cmns;Enfield;CT;06082;(860) 452-0052;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;Estimation Coming Soon;S Main St Apt A1 Middletown CT 06457;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;70;KARA S. RESCIA;5104A Bigelow Cmns;Enfield;CT;06082;(860) 452-0052;District CT, Division 3;157 Church Street, 18th Floor
+ForeclosureNEW;Estimation Coming Soon;S Main St Wallingford CT 06492;3bed;3bath;3,168sqft.;Multi-Family;2;;;;;;;;
+Preforeclosure;290305;Grieb Rd Wallingford CT 06492;4bed;3bath;1,908sqft.;Single-Family;18;;;;;;;;
+Preforeclosure;355505;Pequot Rd Wallingford CT 06492;2bed;2bath;1,532sqft.;Single-Family;25;;;;;;;;
+Preforeclosure;215050;N Main Street Ext Wallingford CT 06492;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Commercial;32;;;;;;;;
+Preforeclosure;401272;Bayberry Dr Wallingford CT 06492;3bed;2.5bath;1,544sqft.;Single-Family;42;;;;;;;;
+Bankruptcy;347737;Apple Tree Ln Wallingford CT 06492;3bed;1bath;1,196sqft.;Single-Family;7;ROBERTA NAPOLITANO;10 Columbus Blvd Fl 6;Hartford;CT;06106;(860) 278-9410;District CT, Division 3;157 Church Street, 18th Floor
+Bankruptcy;764861;High Hill Rd Wallingford CT 06492;4bed;2.5bath;2,978sqft.;Single-Family;23;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor
+Preforeclosure;378200;Prince St Wallingford CT 06492;5bed;3bath;3,583sqft.;Multi-Family;32;;;;;;;;
+Foreclosure;341451;Grieb Trl Wallingford CT 06492;3bed;2bath;1,500sqft.;Single-Family;37;;;;;;;;
+Bankruptcy;292800;Carr St Wallingford CT 06492;3bed;1bath;936sqft.;Single-Family;43;ANDREA M. O'CONNOR;46 Center Sq;East Longmeadow;MA;01028;(413) 486-1110;District CT, Division 3;157 Church Street, 18th Floor

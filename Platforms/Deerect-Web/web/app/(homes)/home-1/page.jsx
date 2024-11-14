@@ -1,7 +1,9 @@
+'use client'
 import dynamic from "next/dynamic";
 import HomeMain from "@/components/home";
+import GridV1 from "@/components/listing-grid/grid-v1";
 
-export const metadata = {
+const metadata = {
   title: 'Home-1 || FindHouse - Real Estate React Template',
   description:
     'FindHouse - Real Estate React Template',
@@ -10,7 +12,8 @@ export const metadata = {
 const index = () => {
   return (
     <>
-      <HomeMain />
+      {/* <HomeMain /> */}
+      <GridV1 />
     </>
   );
 };

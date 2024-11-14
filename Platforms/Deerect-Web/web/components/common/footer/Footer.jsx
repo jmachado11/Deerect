@@ -16,28 +16,7 @@ const Footer = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-        <div className="footer_qlink_widget">
-          <h4>Quick Links</h4>
-          <ul className="list-unstyled">
-            <li>
-              <Link href="/">About Us</Link>
-            </li>
-            <li>
-              <Link href="/">Terms & Conditions</Link>
-            </li>
-            <li>
-              <Link href="/">User’s Guide</Link>
-            </li>
-            <li>
-              <Link href="/">Support Center</Link>
-            </li>
-            <li>
-              <Link href="/">Press Info</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      
       {/* End .col */}
 
       <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
@@ -70,8 +49,7 @@ const Footer = () => {
           <ul className="mb30">
             <Social />
           </ul>
-          <h4>Subscribe</h4>
-          <SubscribeForm />
+          
         </div>
       </div>
     </>

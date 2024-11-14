@@ -5,6 +5,7 @@ import { isSinglePageActive } from "../../../../utils/daynamicNavigation";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
+
 const MyAccount = () => {
   const pathname = usePathname()
   const profileMenuItems = [

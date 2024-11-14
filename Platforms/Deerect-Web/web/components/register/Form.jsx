@@ -112,8 +112,9 @@ const Form = () => {
               className="form-control"
               placeholder="Enter phone number"
               defaultCountry="US"
-              international
+              country="US"
               withCountryCallingCode
+              required
             />
           )}
         />
@@ -155,23 +156,7 @@ const Form = () => {
       <button type="submit" className="btn btn-log w-100 btn-thm">
         Register
       </button>
-
-      <div className="divide">
-        <span className="lf_divider">Or</span>
-        <hr />
-      </div>
-
-      <div className="row mt25">
-        <div className="col-lg-6 w-100">
-          <button
-            type="button"
-            onClick={signInWithGoogle}
-            className="btn btn-block color-white bgc-gogle mb0 w-100"
-          >
-            <i className="fa fa-google float-start mt5"></i> Google
-          </button>
-        </div>
-      </div>
+      
     </form>
   );
 };

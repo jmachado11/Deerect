@@ -38,7 +38,7 @@ const index = () => {
       <section className="footer_one">
         <div className="container">
           <div className="row">
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </div>
       </section>

@@ -5,49 +5,43 @@ import { createUserWithEmailAndPassword, User } from 'firebase/auth';
 // Define the types for the state
 interface AuthState {
   isSignedIn: Boolean;
+  supabaseJWT: String | null;
   userID: String | null;
-  displayName: String | null;
-  fullName: String | null;
-  photoURL: String | null;
-  email: boolean;
+  email: String | null;
+  phoneNumber: String | null;
 }
 
 // Define the initial state
 const initialState: AuthState = {
     isSignedIn: false,
+    supabaseJWT: null,
     userID: null,
-    displayName: null,
-    fullName: null,
-    photoURL: null,
-    email: null
+    email: null,
+    phoneNumber: null
 };
 
-// Define async thunk for user registration
-export const registerUser = createAsyncThunk<User, { email: string; password: string }, { rejectValue: string }>(
-  'auth/registerUser',
-  async ({ email, password }, { rejectWithValue }) => {
-    try {
-      //const response = await createUserWithEmailAndPassword(auth, email, password);
-      //return response.user;
-    } catch (error: any) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
 
 const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    logout(state) {
-      //state.user = null;
+    signIn(state, action){
+      state.isSignedIn = true;
+      state.userID = action.payload.userID;
+      state.supabaseJWT = action.payload.supabaseJWT;
+      state.email = action.payload.email;
+      state.phoneNumber = action.payload.phoneNumber;
     },
-    resetError(state) {
-      //state.error = null;
+    signOut(state) {
+      state.isSignedIn = false;
+      state.userID = null;
+      state.supabaseJWT = null;
+      state.email = null;
+      state.phoneNumber = null;
     },
   },
   
 });
 
-export const { logout, resetError } = authSlice.actions;
+export const { signOut, signIn } = authSlice.actions;
 export default authSlice.reducer;

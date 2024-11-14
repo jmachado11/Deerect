@@ -8,26 +8,16 @@ import {
 } from "../../../../utils/daynamicNavigation";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { signout } from "@/lib/auth-actions";
+
 
 const SidebarMenu = () => {
   const pathname = usePathname()
 
-  const myProperties = [
-    { id: 1, name: "General Elements", route: "/my-properties" },
-    { id: 2, name: "Advanced Elements", route: "/my-properties" },
-    { id: 3, name: "Editors", route: "/my-properties" },
-  ];
-  const reviews = [
-    { id: 1, name: "My Reviews", route: "/my-review" },
-    { id: 2, name: "Visitor Reviews", route: "/my-review" },
-  ];
+
+ 
   const manageAccount = [
-    {
-      id: 1,
-      name: "My Package",
-      route: "/my-package",
-      icon: "flaticon-box",
-    },
+
     {
       id: 2,
       name: "My Profile",
@@ -36,6 +26,16 @@ const SidebarMenu = () => {
     },
     { id: 3, name: "Logout", route: "/login", icon: "flaticon-logout" },
   ];
+  
+  const handleSignOut = async () => {
+    try {
+      await signout();
+    } catch (error) {
+      console.error('Error signing out:', error)
+    }
+    
+    
+  };
 
   return (
     <>
@@ -43,18 +43,18 @@ const SidebarMenu = () => {
         <li className="sidebar_header header">
           <Link href="/">
             <Image
-              width={40}
-              height={45}
-              src="/assets/images/header-logo2.png"
+              width={230}
+              height={150}
+              src="/assets/images/Deerect (white red).png"
               alt="header-logo2.png"
             />
-            <span>FindHouse</span>
+            
           </Link>
         </li>
         {/* End header */}
 
         <li className="title">
-          <span>Main</span>
+          <span>Insight</span>
           <ul>
             <li
               className={`treeview ${
@@ -80,45 +80,52 @@ const SidebarMenu = () => {
                 <span> Create Listing</span>
               </Link>
             </li>
+
             <li
               className={`treeview ${
-                isSinglePageActive("/my-message", pathname)
+                isSinglePageActive("/my-properties", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-message">
+              <Link href="/my-properties">
+                <i className="flaticon-home"></i>
+                <span> My Properties</span>
+              </Link>
+            </li>
+            {/* end properties */}
+            <li
+              className={`treeview ${
+                isSinglePageActive("/my-offers", pathname)
+                  ? "active"
+                  : ""
+              }`}
+            >
+              <Link href="/my-offers">
                 <i className="flaticon-envelope"></i>
-                <span> Message</span>
+                <span>Offers</span>
+              </Link>
+            </li>
+            <li
+              className={`treeview ${
+                isSinglePageActive("/my-favourites", pathname)
+                  ? "active"
+                  : ""
+              }`}
+            >
+              <Link href="/my-favourites">
+                <i className="flaticon-magnifying-glass"></i>
+                <span> My Favorites</span>
               </Link>
             </li>
           </ul>
         </li>
         {/* End Main */}
 
-        <li className="title">
-          <span>Manage Listings</span>
+        {/* <li className="title">
+          <span>Buying</span>
           <ul>
-            <li
-              className={`treeview ${
-                isParentPageActive(myProperties, pathname) ? "active" : ""
-              }`}
-            >
-              <a data-bs-toggle="collapse" href="#my-property">
-                <i className="flaticon-home"></i> <span>My Properties</span>
-                <i className="fa fa-angle-down pull-right"></i>
-              </a>
-              <ul className="treeview-menu collapse" id="my-property">
-                {myProperties.map((item) => (
-                  <li key={item.id}>
-                    <Link href={item.route}>
-                      <i className="fa fa-circle"></i> {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-            {/* end properties */}
+            
 
             <li
               className={`treeview ${
@@ -140,7 +147,6 @@ const SidebarMenu = () => {
                 ))}
               </ul>
             </li>
-            {/* End Review */}
 
             <li
               className={`treeview ${
@@ -167,7 +173,7 @@ const SidebarMenu = () => {
               </Link>
             </li>
           </ul>
-        </li>
+        </li> */}
         {/* End manage listing */}
 
         <li className="title">
@@ -180,9 +186,15 @@ const SidebarMenu = () => {
                 }
                 key={item.id}
               >
-                <Link href={item.route}>
-                  <i className={item.icon}></i> <span>{item.name}</span>
-                </Link>
+                {item.name === "Logout" ? (
+                  <a onClick={handleSignOut} style={{ cursor: "pointer" }}>
+                    <i className={item.icon}></i> <span>{item.name}</span>
+                  </a>
+                ) : (
+                  <Link href={item.route}>
+                    <i className={item.icon}></i> <span>{item.name}</span>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

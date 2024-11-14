@@ -2,8 +2,10 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-
+import { NextResponse, type NextRequest } from 'next/server'
 import { createClient } from "@/utils/supabase/server";
+import errorMap from "zod/lib/locales/en";
+
 
 type SignUpFormData = {
     email: string;
@@ -13,24 +15,34 @@ type SignUpFormData = {
 
 }
 
-export async function login(formData: FormData) {
+type LoginFormData = {
+  email: string;
+  password: string;
+  
+
+}
+
+export async function login(formData: LoginFormData) {
   const supabase = createClient();
 
   // type-casting here for convenience
   // in practice, you should validate your inputs
-  const data = {
-    email: formData.get("email") as string,
-    password: formData.get("password") as string,
+  const formata = {
+    email: formData.email,
+    password: formData.password,
   };
 
-  const { error } = await supabase.auth.signInWithPassword(data);
+  const { data, error } = await supabase.auth.signInWithPassword(formata);
 
   if (error) {
-    redirect("/404");
+    console.log(error)
+  }else{
+    console.log(data)
+    console.log(Request.toString())
+    revalidatePath("/", "layout");
+    redirect("/");
   }
-
-  revalidatePath("/", "layout");
-  redirect("/");
+  
 }
 
 export async function signup(data: SignUpFormData) {
@@ -38,7 +50,7 @@ export async function signup(data: SignUpFormData) {
 
   const { email, password, fullName, phoneNumber } = data;
 
-  const { error } = await supabase.auth.signUp({
+  const { error, data: signUpData } = await supabase.auth.signUp({
     email,
     password,
     phone:phoneNumber,
@@ -48,6 +60,7 @@ export async function signup(data: SignUpFormData) {
         email,
         phone_number: phoneNumber,
       },
+      
     },
   });
 
@@ -55,6 +68,16 @@ export async function signup(data: SignUpFormData) {
     console.error("Signup Error:", error);
     throw new Error(error.message);
   }
+
+  // Extract the token if signup is successful
+  const accessToken = signUpData?.session?.access_token;
+  //if (!accessToken) {
+   // console.error("No token received during signup.");
+    //throw new Error("No token received during signup.");
+  //}
+
+  console.log(accessToken)
+  console.log(signUpData)
 
   revalidatePath("/", "layout");
   // Optionally, you can return a success message or data
@@ -69,8 +92,22 @@ export async function signout() {
     redirect("/error");
   }
 
-  redirect("/logout");
+  redirect("/login");
 }
+
+
+export async function updatePassword(newPassword: string) {
+  const supabase = createClient();
+  const { error } = await supabase.auth.updateUser({password: newPassword,});
+  if (error) {
+    console.log(error);
+    redirect("/error");
+  }
+
+  redirect("/");
+}
+
+
 
 export async function signInWithGoogle() {
   const supabase = createClient();

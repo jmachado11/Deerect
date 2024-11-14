@@ -1,0 +1,101 @@
+type;price;address;bedrooms;bathrooms;square footage;property type;Day(s) On Site:;Trustee Name:;Trustee Address:;Trustee City:;Trustee State:;Trustee Zip:;Trustee Phone:;Court Name:;Court Address:
+PreforeclosureNEW;105395;Penn St Philadelphia PA 19124;4bed;1bath;1,582sqft.;Single-Family;2;;;;;;;;
+Preforeclosure;128690;E Sanger St Philadelphia PA 19124;3bed;1bath;1,214sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;134317;Salem St Philadelphia PA 19124;3bed;1bath;1,056sqft.;Condo;4;;;;;;;;
+Preforeclosure;184413;Saul St Philadelphia PA 19124;3bed;1bath;1,341sqft.;Townhome;5;LOGS LEGAL GROUP;;;;;;;
+Preforeclosure;189459;Ramona Ave Philadelphia PA 19124;3bed;1bath;1,152sqft.;Townhome;5;KML LAW GROUP;;;;;;;
+PreforeclosureNEW;Estimation Coming Soon;Penn St Phila PA 19124;4bed;1bath;1,582sqft.;Single-Family;1;;;;;;;;
+Preforeclosure;231196;Foulkrod St Philadelphia PA 19124;5bed;2bath;2,112sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;236974;Claridge St Philadelphia PA 19124;3bed;1bath;1,136sqft.;Townhome;5;MCCABE WEISBERG & CONWAY;;;;;;;
+Preforeclosure;Estimation Coming Soon;Foulkrod St # 14 Philadelphia PA 19124;8bed;3bath;3,564sqft.;Multi-Family;5;MANLEY DEAS KOCHALSKI LLC;;;;;;;
+Preforeclosure;160601;Granite St Philadelphia PA 19124;3bed;1bath;1,104sqft.;Townhome;5;KML LAW GROUP;;;;;;;
+PreforeclosureNEW;128700;Elkins Ave Philadelphia PA 19120;Bedrooms Coming Soon;Bathrooms Coming Soon;1,380sqft.;Single-Family;2;;;;;;;;
+BankruptcyNEW;215696;W Clarkson Ave Philadelphia PA 19120;Bedrooms Coming Soon;1.5bath;1,260sqft.;Single-Family;1;;;;;;;District PAE, Division 2;900 Market Street, Suite 400
+As-Is Deal;110000;Tabor Ave Philadelphia PA 19120;3bed;1bath;1,188sqft.;Townhome;4;;;;;;;;
+Foreclosure;187495;E Sanger St Philadelphia PA 19120;3bed;1bath;1,128sqft.;Townhome;5;;;;;;;;
+Preforeclosure;278405;Whitaker Ave Philadelphia PA 19120;Bedrooms Coming Soon;Bathrooms Coming Soon;1,200sqft.;Townhome;5;ROBERTSON ANSCHUTZ SCHNEID CRANE & PARTNERS;;;;;;;
+PreforeclosureNEW;112080;Weymouth St Philadelphia PA 19120;2bed;1bath;800sqft.;Single-Family;2;;;;;;;;
+Preforeclosure;209699;Bingham St Philadelphia PA 19120;3bed;1bath;1,196sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;199199;N 2nd St Philadelphia PA 19120;3bed;1bath;1,080sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;171844;Reach St Philadelphia PA 19120;3bed;1bath;800sqft.;Condo;4;;;;;;;;
+Preforeclosure;140125;N Howard St Philadelphia PA 19120;3bed;1bath;992sqft.;Townhome;5;STERN & EISENBERG;;;;;;;
+Preforeclosure;186500;Fairview Ave Lancaster PA 17603;3bed;2bath;1,026sqft.;Multi-Family;5;BARLEY SNYDER;;;;;;;
+Preforeclosure;276948;Hoover Rd Lancaster PA 17603;4bed;1bath;1,125sqft.;Single-Family;5;PADGETT LAW GROUP;;;;;;;
+Preforeclosure;203840;Fairview Ave Lancaster PA 17603;3bed;2bath;1,102sqft.;Townhome;5;HENRY & BEAVER LLP;;;;;;;
+Preforeclosure;247968;W Frederick St Lancaster PA 17603;2bed;1bath;968sqft.;Townhome;5;BARLEY SNYDER;;;;;;;
+Preforeclosure;188200;New Dorwart St Lancaster PA 17603;3bed;1.5bath;1,170sqft.;Single-Family;9;;;;;;;;
+Preforeclosure;175340;Coral St Lancaster PA 17603;5bed;2bath;1,658sqft.;Townhome;5;MDK LEGAL;;;;;;;
+Preforeclosure;343096;Manor Ridge Dr Lancaster PA 17603;2bed;2bath;1,551sqft.;Single-Family;5;STERN & EISENBERG PC;;;;;;;
+Preforeclosure;305243;W Orange St Lancaster PA 17603;5bed;1bath;2,124sqft.;Townhome;5;HLADIK ONORATO & FEDERMAN LLP;;;;;;;
+Bankruptcy;303091;Race Ave Lancaster PA 17603;3bed;1bath;1,708sqft.;Single-Family;6;SCOTT F. WATERMAN [CHAPTER 13];2901 Saint Lawrence Ave Ste 100;Reading;PA;19606;(610) 779-1313;District PAE, Division 4;201 Penn Street, Suite 103
+Preforeclosure;248792;Perthshire Dr Lancaster PA 17603;3bed;2.5bath;1,536sqft.;Single-Family;9;;;;;;;;
+PreforeclosureNEW;Estimation Coming Soon;14 Dungan Rd Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;1;;;;;;;;
+Bankruptcy;198595;Magee Ave Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;1,320sqft.;Multi-Family;4;KENNETH E. WEST;1234 Market St Ste 1813;Philadelphia;PA;19107;(215) 627-1377;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;158740;Mckinley St Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;848sqft.;Single-Family;11;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Dungan Rd Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;16;MANLEY DEAS KOCHALSKI LLC;1 E WACKER SUITE 1250;CHICAGO;IL;60601;(312) 651-6700;;
+Preforeclosure;Estimation Coming Soon;Dungan Road Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;18;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Hartel Street Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;2,724sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;197000;Montour St Philadelphia PA 19111;2bed;2bath;2,956sqft.;Multi-Family;5;BROCK & SCOTT;;;;;;;
+Preforeclosure;275040;Princeton Ave Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;886sqft.;Single-Family;11;;;;;;;;
+Foreclosure;420094;Gilham St Philadelphia PA 19111;Bedrooms Coming Soon;Bathrooms Coming Soon;3,400sqft.;Single-Family;16;;;;;;;;
+Preforeclosure;188001;Summerdale Ave Philadelphia PA 19111;3bed;3bath;1,440sqft.;Single-Family;18;;;;;;;;
+PreforeclosureNEW;161711;Rodman St Philadelphia PA 19143;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;2;;;;;;;;
+ForeclosureNEW;206796;Hadfield St Philadelphia PA 19143;3bed;1bath;1,090sqft.;Property Type Coming Soon;3;;;;;;;;
+Preforeclosure;3100;Elmwood Ave Philadelphia PA 19143;2bed;1bath;735sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;304387;Cedar Ave Philadelphia PA 19143;Bedrooms Coming Soon;Bathrooms Coming Soon;1,500sqft.;Single-Family;5;ROBERTSON ANSCHUTZ SCHNEID CRANE & PARTNERS;;;;;;;
+Preforeclosure;146850;S Ithan St Philadelphia PA 19143;3bed;1bath;1,020sqft.;Townhome;5;FRIEDMAN VARTOLO LLP;;;;;;;
+PreforeclosureNEW;228467;S 53rd St Philadelphia PA 19143;3bed;1bath;1,446sqft.;Single-Family;2;;;;;;;;
+Preforeclosure;79406;Grays Ave Philadelphia PA 19143;3bed;1bath;1,026sqft.;Townhome;3;ROBERTSON ANSCHUTZ SCHNEID CRANE & PARTNERS PLLC;133 Gaither Dr;Mount Laurel;NJ;08054;(855) 225-6906;;
+Bankruptcy;116492;S Alden St Philadelphia PA 19143;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;4;;;;;;;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;202950;S Paxon St Philadelphia PA 19143;3bed;1bath;1,050sqft.;Townhome;5;FRIEDMAN VARTOLO LLP;;;;;;;
+Preforeclosure;94587;S 56th St Philadelphia PA 19143;3bed;1bath;1,290sqft.;Townhome;5;LAW OFFICE OF GREGORY JAVARDIAN LLC;;;;;;;
+BankruptcyNEW;692615;Lansdale Ave Lansdale PA 19446;3bed;2.5bath;2,615sqft.;Single-Family;1;;;;;;;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;Estimation Coming Soon;W Main St Lansdale PA 19446;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Multi-Family;9;Friedman Schuman Applebaum AND Nemeroff P C;275 Commerce Drive;FORT WASHINGTON;PA;19034;(215) 635-7200;;
+Bankruptcy;Estimation Coming Soon;N Line St Apt U202 Lansdale PA 19446;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;23;CHRISTINE C. SHUBERT;821 Wesley Ave;Ocean City;NJ;08226;(609) 923-7184;District PAE, Division 2;900 Market Street, Suite 400
+Bankruptcy;Estimation Coming Soon;S Broad St Apt D2 Lansdale PA 19446;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;34;ROBERT W. SEITZER;1900 Spruce St;Philadelphia;PA;19103;(215) 510-7508;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;386745;Rosemont Ave Lansdale PA 19446;4bed;1bath;1,663sqft.;Single-Family;37;;;;;;;;
+Bankruptcy;592185;Hedge Row Cir Lansdale PA 19446;3bed;2.5bath;2,557sqft.;Single-Family;8;KENNETH E. WEST;1234 Market St Ste 1813;Philadelphia;PA;19107;(215) 627-1377;District PAE, Division 2;900 Market Street, Suite 400
+Bankruptcy;442722;Valley Dr Lansdale PA 19446;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;22;CHRISTINE C. SHUBERT;821 Wesley Ave;Ocean City;NJ;08226;(609) 923-7184;District PAE, Division 2;900 Market Street, Suite 400
+Foreclosure;Estimation Coming Soon;Pike Lansdale PA 19446;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;24;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Columbia Ave Apt D5 Lansdale PA 19446;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;35;ROBERT H. HOLBER;41 E Front St;Media;PA;19063;(610) 565-5463;District PAE, Division 2;900 Market Street, Suite 400
+Bankruptcy;286100;W 2nd St Lansdale PA 19446;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;43;LYNN E. FELDMAN;2310 Walbert Ave Ste 103;Allentown;PA;18104;(610) 530-9285;District PAE, Division 2;900 Market Street, Suite 400
+PreforeclosureNEW;3100;Kensington Ave Philadelphia PA 19134;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;2;;;;;;;;
+Preforeclosure;248571;E Cambria St Philadelphia PA 19134;3bed;2bath;1,190sqft.;Single-Family;4;;;;;;;;
+Bankruptcy;Estimation Coming Soon;E Atlantic St Philadelphia PA 19134;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;4;;;;;;;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;263307;Belgrade St Philadelphia PA 19134;2bed;1bath;1,086sqft.;Townhome;5;ROBERTSON ANSCHUTZ SCHNEID CRANE & PARTNERS;;;;;;;
+Preforeclosure;168018;Janney St Philadelphia PA 19134;3bed;1bath;956sqft.;Townhome;5;BROCK & SCOTT;;;;;;;
+Preforeclosure;Estimation Coming Soon;Emerald Street Philadelphia PA 19134;2bed;Bathrooms Coming Soon;1,092sqft.;Single-Family;4;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Weymouth St Philadelphia PA 19134;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;4;IFIGHT4JUSTICE LAW OFFICE OF PREDRAG FILIPOVIC;1635 Market St Suite 1600;PHILADELPHIA;PA;19103;(267) 265-0520;;
+Preforeclosure;57880;E Auburn St Philadelphia PA 19134;3bed;1bath;1,080sqft.;Townhome;5;BROCK & SCOTT;;;;;;;
+Preforeclosure;345495;Gaul St Philadelphia PA 19134;3bed;2bath;1,454sqft.;Townhome;5;ORLANS PC;;;;;;;
+Preforeclosure;Estimation Coming Soon;E Thompson St Philadelphia PA 19134;3bed;2bath;2,100sqft.;Townhome;6;STRADLEY RONON STEVENS & YOUNG;;;;;;;
+PreforeclosureNEW;178420;Agusta St Philadelphia PA 19149;3bed;1bath;1,132sqft.;Single-Family;2;;;;;;;;
+Preforeclosure;203501;Lynford St Philadelphia PA 19149;3bed;1bath;1,152sqft.;Townhome;5;MANLEY DEAS KOCHALSKI LLC;;;;;;;
+Preforeclosure;3100;Magee Ave Philadelphia PA 19149;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;8;;;;;;;;
+Preforeclosure;195271;Stevens St Philadelphia PA 19149;3bed;1bath;1,126sqft.;Single-Family;16;;;;;;;;
+Preforeclosure;183242;Oakland St Philadelphia PA 19149;3bed;1bath;948sqft.;Townhome;20;KML LAW GROUP;;;;;;;
+PreforeclosureNEW;232710;Akron St Philadelphia PA 19149;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;2;;;;;;;;
+Preforeclosure;184770;Alcott St Philadelphia PA 19149;3bed;1bath;1,072sqft.;Townhome;5;ROBERTSON ANSCHUTZ SCHNEID CRANE & PARTNERS;;;;;;;
+Preforeclosure;202464;Stevens St Philadelphia PA 19149;3bed;1bath;1,182sqft.;Single-Family;11;;;;;;;;
+Bankruptcy;219620;Souder St Philadelphia PA 19149;3bed;1bath;1,260sqft.;Single-Family;15;KENNETH E. WEST;1234 Market St Ste 1813;Philadelphia;PA;19107;(215) 627-1377;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;182204;Akron St Philadelphia PA 19149;3bed;1bath;896sqft.;Townhome;20;GREGORY JAVARDIAN;;;;;;;
+BankruptcyNEW;Estimation Coming Soon;Knights Rd Apt 63-6 Bensalem PA 19020;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;1;LYNN E. FELDMAN;2310 Walbert Ave Ste 103;Allentown;PA;18104;(610) 530-9285;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;278825;Kiansas Ave Bensalem PA 19020;3bed;1bath;840sqft.;Single-Family;6;KML Law Group PC;;;;;;;
+Preforeclosure;570017;Edge Ave Bensalem PA 19020;4bed;3bath;1,943sqft.;Single-Family;10;ADRIENNA HUNSBERGER;;;;;;;
+Bankruptcy;452600;Laurence Ct Bensalem PA 19020;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;11;CHRISTINE C. SHUBERT;821 Wesley Ave;Ocean City;NJ;08226;(609) 923-7184;District PAE, Division 2;900 Market Street, Suite 400
+Bankruptcy;343841;Maltese Ct Bensalem PA 19020;4bed;2.5bath;2,108sqft.;Single-Family;16;CHRISTINE C. SHUBERT;821 Wesley Ave;Ocean City;NJ;08226;(609) 923-7184;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;335298;Windward Ln Bensalem PA 19020;3bed;2bath;1,520sqft.;Condo;6;Stern AND Eisenberg PC;;;;;;;
+Bankruptcy;Estimation Coming Soon;Thunder Cir Bensalem PA 19020;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;9;KENNETH E. WEST;1234 Market St Ste 1813;Philadelphia;PA;19107;(215) 627-1377;District PAE, Division 2;900 Market Street, Suite 400
+Preforeclosure;468002;Merganser Way Bensalem PA 19020;3bed;2bath;1,704sqft.;Single-Family;10;KARIN BALTIMORE SCHWEIGER;;;;;;;
+Foreclosure;301593;Center Ave Bensalem PA 19020;1bed;3bath;975sqft.;Single-Family;14;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Beacons Ct Apt B Bensalem PA 19020;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;21;CHRISTINE C. SHUBERT;821 Wesley Ave;Ocean City;NJ;08226;(609) 923-7184;District PAE, Division 2;900 Market Street, Suite 400
+Bankruptcy;374958;Spring Valley Rd Lancaster PA 17601;3bed;1.5bath;1,768sqft.;Single-Family;7;SCOTT F. WATERMAN [CHAPTER 13];2901 Saint Lawrence Ave Ste 100;Reading;PA;19606;(610) 779-1313;District PAE, Division 4;201 Penn Street, Suite 103
+Bankruptcy;372732;Richmond Dr Lancaster PA 17601;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;18;CHRISTINE C. SHUBERT;821 Wesley Ave;Ocean City;NJ;08226;(609) 923-7184;District PAE, Division 4;201 Penn Street, Suite 103
+Preforeclosure;269700;Fruitville Pike Lancaster PA 17601;3bed;1bath;1,304sqft.;Multi-Family;30;STERN & EISENBERG PC;;;;;;;
+Bankruptcy;378525;Raymond Dr Lancaster PA 17601;3bed;2bath;1,680sqft.;Single-Family;32;ROBERT W. SEITZER;1900 Spruce St;Philadelphia;PA;19103;(215) 510-7508;District PAE, Division 4;201 Penn Street, Suite 103
+Preforeclosure;501102;Springton Way Lancaster PA 17601;4bed;3bath;1,776sqft.;Single-Family;41;TUCKER ARENSBERG PC;;;;;;;
+Preforeclosure;300982;Euclid Dr Lancaster PA 17601;3bed;1.5bath;1,746sqft.;Single-Family;9;;;;;;;;
+Bankruptcy;367145;Blossom Valley Rd Lancaster PA 17601;3bed;1.5bath;1,474sqft.;Single-Family;25;SCOTT F. WATERMAN [CHAPTER 13];2901 Saint Lawrence Ave Ste 100;Reading;PA;19606;(610) 779-1313;District PAE, Division 4;201 Penn Street, Suite 103
+Bankruptcy;Estimation Coming Soon;Colonial Crest Dr # K Lancaster PA 17601;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;31;SCOTT F. WATERMAN [CHAPTER 13];2901 Saint Lawrence Ave Ste 100;Reading;PA;19606;(610) 779-1313;District PAE, Division 4;201 Penn Street, Suite 103
+Preforeclosure;404563;Glenn Rd Lancaster PA 17601;4bed;1bath;1,924sqft.;Single-Family;37;;;;;;;;
+Preforeclosure;431198;Crooked Oak Dr Lancaster PA 17601;4bed;3bath;2,020sqft.;Single-Family;60;MANLEY DEAS KOCHALSKI LLC;;;;;;;

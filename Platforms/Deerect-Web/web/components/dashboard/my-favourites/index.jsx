@@ -1,4 +1,4 @@
-import Header from "../../common/header/dashboard/Header";
+import DefaultHeader from "../../common/header/DefaultHeader";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
 import FavouritProducts from "./FavouritProducts";
@@ -10,7 +10,7 @@ const index = () => {
   return (
     <>
       {/* <!-- Main Header Nav --> */}
-      <Header />
+      <DefaultHeader />
 
       {/* <!--  Mobile Menu --> */}
       <MobileMenu />
@@ -58,33 +58,14 @@ const index = () => {
                 </div>
                 {/* End .col */}
 
-                <div className="col-lg-8 col-xl-8">
-                  <div className="candidate_revew_select style2 text-end mb30-991">
-                    <ul className="mb0">
-                      <li className="list-inline-item">
-                        <div className="candidate_revew_search_box course fn-520">
-                          <SearchBox />
-                        </div>
-                      </li>
-                      {/* End li */}
-
-                      <li className="list-inline-item">
-                        <Filtering />
-                      </li>
-                      {/* End li */}
-                    </ul>
-                  </div>
-                </div>
-                {/* End .col */}
+                
 
                 <div className="col-lg-12">
                   <div className="my_dashboard_review mb40">
                     <div className="favorite_item_list">
                       <FavouritProducts />
 
-                      <div className="mbp_pagination">
-                        <Pagination />
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -95,7 +76,7 @@ const index = () => {
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">
-                    <p>© 2020 Find House. Made with love.</p>
+                    <p>© 2024 Deerect. Made with love.</p>
                   </div>
                 </div>
               </div>

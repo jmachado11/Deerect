@@ -29,21 +29,15 @@ const Header = () => {
       <div className="container-fluid p0">
         {/* <!-- Menu Toggle btn--> */}
         <Link href="/" className="navbar_brand float-start dn-smd">
-          <Image
-            width={40}
-            height={45}
-            className="logo1 img-fluid"
-            src="/assets/images/header-logo2.png"
-            alt="header-logo2.png"
-          />
-          <Image
-            width={40}
-            height={45}
-            className="logo2 img-fluid"
-            src="/assets/images/header-logo2.png"
-            alt="header-logo2.png"
-          />
-          <span>FindHouse</span>
+        <Image
+              width={200}
+              height={125}
+              className="nav_logo_img contain mt-20 "
+              src="/assets/images/Deerect (white red).png"
+              alt="header-logo2.png"
+            />
+          
+          
         </Link>
         {/* site logo brand */}
 

@@ -106,8 +106,8 @@ const DetailedInfo = () => {
 
       <div className="col-xl-12">
         <div className="my_profile_setting_input overflow-hidden mt20">
-          <button className="btn btn1 float-start">Back</button>
-          <button className="btn btn2 float-end">Next</button>
+          
+          <button className="btn btn2 float-end">Submit</button>
         </div>
       </div>
       {/* End .col */}

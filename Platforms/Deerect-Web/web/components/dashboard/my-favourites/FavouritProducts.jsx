@@ -1,44 +1,79 @@
+'use client';
+import { createClient } from '@/utils/supabase/client';
+import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 
-import properties from "../../../data/properties";
-import Image from "next/image";
-
 const FavouritProducts = () => {
-  let content = properties?.slice(0, 4)?.map((item) => (
-    <div className="feat_property list favorite_page" key={item.id}>
-      <div className="thumb">
-        <Image
-          width={150}
-          height={220}
-          className="img-whp cover"
-          src={item.img}
-          alt="fp1.jpg"
-        />
-        <div className="thmb_cntnt">
-          <ul className="tag mb0">
-            <li className="list-inline-item">
-              <a href="#">For Rent</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      {/* End .thumb */}
+  const [favorites, setFavorites] = useState([]);
+  const supabase = createClient();
 
+  const fetchFavorites = async () => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      if (!user) return;
+
+      const { data, error } = await supabase
+        .from('Favorite')
+        .select(`
+          listing_id,
+          Listing (
+            id,
+            property_type,
+            property_address,
+            interest_rate
+          )
+        `)
+        .eq('user_id', user.id);
+
+      if (error) throw error;
+      setFavorites(data || []);
+    } catch (error) {
+      console.error('Error fetching favorites:', error);
+    }
+  };
+
+  const deleteFavorite = async (listingId) => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      if (!user) return;
+
+      const { error } = await supabase
+        .from('Favorite')
+        .delete()
+        .eq('user_id', user.id)
+        .eq('listing_id', listingId);
+
+      if (error) throw error;
+      fetchFavorites(); // Refresh the list after deletion
+    } catch (error) {
+      console.error('Error deleting favorite:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchFavorites();
+  }, []);
+
+  let content = favorites.map((item) => (
+    <div className="feat_property list favorite_page" key={item.listing_id}>
       <div className="details">
         <div className="tc_content">
           <h4>
-            <Link href={`/listing-details-v1/${item.id}`}>{item.title}</Link>
+            <Link href={`/home/${item.listing_id}`}>
+              {item.Listing.property_type}
+            </Link>
           </h4>
           <p>
-            <span className="flaticon-placeholder"></span> {item.location}
+            <span className="flaticon-placeholder"></span> 
+            {item.Listing.property_address}
           </p>
-          <a className="fp_price text-thm" href="#">
-            ${item.price}
-            <small>/mo</small>
-          </a>
+          <p className="fp_price text-thm">
+            Interest Rate: {item.Listing.interest_rate}%
+          </p>
         </div>
       </div>
-      {/* End details */}
 
       <ul className="view_edit_delete_list mb0 mt35">
         <li
@@ -46,13 +81,24 @@ const FavouritProducts = () => {
           data-toggle="tooltip"
           data-placement="top"
           title="Delete"
+          onClick={() => deleteFavorite(item.listing_id)}
+          style={{ cursor: 'pointer' }}
         >
-          <a href="#">
+          <a>
             <span className="flaticon-garbage"></span>
           </a>
         </li>
+        <li
+          className="list-inline-item"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="View Details"
+        >
+          <Link href={`/home/${item.listing_id}`}>
+            <span className="flaticon-right-arrow"></span>
+          </Link>
+        </li>
       </ul>
-      {/* view_edit_delete_list */}
     </div>
   ));
 

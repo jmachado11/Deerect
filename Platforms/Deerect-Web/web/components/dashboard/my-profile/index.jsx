@@ -1,4 +1,4 @@
-import Header from "../../common/header/dashboard/Header";
+import DefaultHeader from "../../common/header/DefaultHeader";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
 import ChangePassword from "./ChangePassword";
@@ -9,7 +9,7 @@ const index = () => {
   return (
     <>
       {/* <!-- Main Header Nav --> */}
-      <Header />
+      <DefaultHeader />
 
       {/* <!--  Mobile Menu --> */}
       <MobileMenu />
@@ -61,7 +61,7 @@ const index = () => {
                   <div className="my_dashboard_review">
                     <div className="row">
                       <div className="col-xl-2">
-                        <h4>Profile Information</h4>
+                        <h4>Profile Information:</h4>
                       </div>
                       <div className="col-xl-10">
                         <ProfileInfo />
@@ -70,26 +70,16 @@ const index = () => {
                   </div>
                   {/* End prifle info wrapper end */}
 
-                  <div className="my_dashboard_review mt30">
-                    <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Social Media</h4>
-                      </div>
-                      <div className="col-xl-10">
-                        <SocialMedia />
-                      </div>
-                    </div>
-                  </div>
-                  {/* End .SocialMedia */}
+                  
 
                   <div className="my_dashboard_review mt30">
                     <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Change password</h4>
-                      </div>
-                      <div className="col-xl-10">
+                      {/* <div className="col-xl-2">
+                        <h4>Change password:</h4>
+                      </div> */}
+                      {/* <div className="col-xl-10">
                         <ChangePassword />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -99,7 +89,7 @@ const index = () => {
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">
-                    <p>© 2020 Find House. Made with love.</p>
+                    <p>© 2024 Deerect. Made with love.</p>
                   </div>
                 </div>
               </div>
