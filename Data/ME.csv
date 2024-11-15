@@ -1,0 +1,98 @@
+type;price;address;bedrooms;bathrooms;square footage;property type;Day(s) On Site:;Trustee Name:;Trustee Address:;Trustee City:;Trustee State:;Trustee Zip:;Trustee Phone:;Court Name:;Court Address:
+Preforeclosure;336567;Brasley Ave Glenburn ME 04401;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;19;;;;;;;;
+Bankruptcy;236114;Lane St Bangor ME 04401;4bed;1bath;1,149sqft.;Single-Family;34;NATHANIEL R. HULL, ESQ.;PO Box 586, ONE PORTLAND SQUARE;Portland;ME;04112;(207) 253-4726;District ME, Division 1;202 Harlow Street, 3rd Floor
+Preforeclosure;185473;Union St Bangor ME 04401;4bed;2bath;1,392sqft.;Single-Family;47;;;;;;;;
+Preforeclosure;204200;Pier St Bangor ME 04401;3bed;2bath;2,220sqft.;Multi-Family;75;;;;;;;;
+Bankruptcy;48000;H St Bangor ME 04401;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Commercial;78;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 1;202 Harlow Street, 3rd Floor
+Preforeclosure;224861;Naylor St Bangor ME 04401;3bed;1bath;900sqft.;Single-Family;33;;;;;;;;
+Preforeclosure;371250;Libbey Ln Glenburn ME 04401;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;40;;;;;;;;
+Preforeclosure;687369;Copper Rdg Hermon ME 04401;4bed;3bath;3,168sqft.;Single-Family;68;;;;;;;;
+Bankruptcy;209167;Lincoln St Bangor ME 04401;2bed;1bath;1,064sqft.;Single-Family;77;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 1;202 Harlow Street, 3rd Floor
+Foreclosure;191408;Main St Veazie ME 04401;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;88;;;;;;;;
+PreforeclosureNEW;177700;Baird Ave Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;1;Brock And Scott PLLC;30 Danforth Street Suite 104;PORTLAND;ME;04101;(401) 217-8701;;
+Bankruptcy;Estimation Coming Soon;Park St Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;3;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;168800;Wilson St Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;12;;;;;;;;
+Preforeclosure;151600;Brule St Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;16;Brock & Scott;;;;;(910) 392-4988;;
+Preforeclosure;212500;Tarr Ave Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;26;;;;;;;;
+PreforeclosureNEW;312085;Jones Ave Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;2;KORDE AND ASSOCIATES PC;707 SABLE OAKS DR SUITE 250;SOUTH PORTLAND;ME;04106;(207) 775-6223;;
+Bankruptcy;466441;Pond Rd Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;9;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;246400;Saint Patrick Ave Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;12;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Bates St Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Multi-Family;25;Clifford and Golden P A;5 Maple St;LISBON FALLS;ME;04252;(207) 353-9366;;
+Preforeclosure;Estimation Coming Soon;Orange St Lewiston ME 04240;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Property Type Coming Soon;40;;;;;;;;
+BankruptcyNEW;480353;Edgeworth Ave Portland ME 04103;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;2;;;;;;;District ME, Division 2;537 Congress Street, 2nd Floor
+Bankruptcy;Estimation Coming Soon;Auburn St, Ste J Pmb 1155 Portland ME 04103;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;22;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;796192;Parsons Rd Portland ME 04103;3bed;2bath;1,598sqft.;Single-Family;96;;;;;;;;
+Bankruptcy;416162;Allen Ave Portland ME 04103;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Commercial;151;JEFFREY T. PIAMPIANO, ESQ.;84 Marginal Way Ste 600;Portland;ME;04101;(207) 772-1941;District ME, Division 2;537 Congress Street, 2nd Floor
+Bankruptcy;567600;Pleasant Ave Portland ME 04103;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;182;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;567600;Pleasant Ave Portland ME 04103;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;16;Brock & Scott;;;;;(910) 392-4988;;
+Preforeclosure;614000;Washington Ave Portland ME 04103;4bed;2bath;2,592sqft.;Multi-Family;47;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Bay Street Ext Portland ME 04103;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Condo;99;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;505500;Washington Ave Portland ME 04103;6bed;2bath;2,888sqft.;Multi-Family;159;;;;;;;;
+Preforeclosure;400320;Wellwood Rd Portland ME 04103;3bed;1bath;1,075sqft.;Single-Family;229;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Bennett St Apt 5 S Portland ME 04106;2bed;1.5bath;980sqft.;Condo;26;KORDE AND ASSOCIATES PC;707 SABLE OAKS DR SUITE 250;SOUTH PORTLAND;ME;04106;(207) 775-6223;;
+Preforeclosure;372480;Bennett St Apt 5 South Portland ME 04106;2bed;2bath;980sqft.;Condo;29;;;;;;;;
+Preforeclosure;405590;Smith St South Portland ME 04106;1bed;1bath;594sqft.;Single-Family;75;;;;;;;;
+Bankruptcy;520800;Plymouth Rd South Portland ME 04106;3bed;1bath;1,650sqft.;Single-Family;118;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;552200;Mosher St South Portland ME 04106;3bed;2bath;1,846sqft.;Multi-Family;159;;;;;;;;
+Preforeclosure;243729;Main St Apt 75 South Portland ME 04106;2bed;1bath;962sqft.;Property Type Coming Soon;27;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Main St # 75 South Portland ME 04106;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Condo;30;KORDE AND ASSOCIATES PC;707 SABLE OAKS DR SUITE 250;SOUTH PORTLAND;ME;04106;(207) 775-6223;;
+Preforeclosure;Estimation Coming Soon;Romano Rd South Portland ME 04106;3bed;1bath;984sqft.;Single-Family;89;;;;;;;;
+Preforeclosure;536924;Highland Ave South Portland ME 04106;3bed;3bath;1,750sqft.;Single-Family;123;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Townhouse Dr South Portland ME 04106;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;386;NATHANIEL R. HULL, ESQ.;PO Box 586, ONE PORTLAND SQUARE;Portland;ME;04112;(207) 253-4726;District ME, Division 2;537 Congress Street, 2nd Floor
+PreforeclosureNEW;Estimation Coming Soon;Chase Ave Waterville ME 04901;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;1;Kevin J Crosman Esq;P O Box 4510;PORTLAND;ME;04112;(207) 518-5912;;
+Bankruptcy;375988;Frankwood Dr Winslow ME 04901;3bed;1.5bath;1,049sqft.;Single-Family;15;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 1;202 Harlow Street, 3rd Floor
+Preforeclosure;Estimation Coming Soon;E River Rd Way Ne Benton ME 04901;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;23;DOONAN GRAVES AND LONGORIA LLC;100 CUMMINGS CENTER SUITE 225D;BEVERLY;MA;01915;(978) 921-2670;;
+Bankruptcy;241678;Marie St Winslow ME 04901;4bed;1bath;1,264sqft.;Single-Family;43;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 1;202 Harlow Street, 3rd Floor
+Bankruptcy;Estimation Coming Soon;Halifax St Apt 201 Winslow ME 04901;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;55;JEFFREY T. PIAMPIANO, ESQ.;84 Marginal Way Ste 600;Portland;ME;04101;(207) 772-1941;District ME, Division 1;202 Harlow Street, 3rd Floor
+Bankruptcy;247600;Clinton Ave Winslow ME 04901;3bed;2bath;1,949sqft.;Single-Family;8;NATHANIEL R. HULL, ESQ.;PO Box 586, ONE PORTLAND SQUARE;Portland;ME;04112;(207) 253-4726;District ME, Division 1;202 Harlow Street, 3rd Floor
+Preforeclosure;222494;River Rd Benton ME 04901;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;19;DOONAN GRAVES AND LONGORIA LLC;100 CUMMINGS CENTER SUITE 225D;BEVERLY;MA;01915;(978) 921-2670;;
+Preforeclosure;315400;Morrill Ave Waterville ME 04901;4bed;1.5bath;2,500sqft.;Single-Family;26;Brock & Scott;;;;;(910) 392-4988;;
+Preforeclosure;177572;May St Waterville ME 04901;4bed;1bath;1,008sqft.;Single-Family;47;;;;;;;;
+Bankruptcy;81000;Village Green Rd Waterville ME 04901;2bed;2bath;1,008sqft.;Single-Family;59;JEFFREY T. PIAMPIANO, ESQ.;84 Marginal Way Ste 600;Portland;ME;04101;(207) 772-1941;District ME, Division 1;202 Harlow Street, 3rd Floor
+PreforeclosureNEW;189675;S Belfast Ave Augusta ME 04330;3bed;1bath;1,440sqft.;Single-Family;2;Brock & Scott;;;;;(910) 392-4988;;
+Bankruptcy;Estimation Coming Soon;Knowles Ln Chelsea ME 04330;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;20;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 1;202 Harlow Street, 3rd Floor
+Preforeclosure;147000;Weston St Augusta ME 04330;5bed;3bath;2,178sqft.;Multi-Family;26;;;;;;;;
+Preforeclosure;217781;Pond Rd Sidney ME 04330;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;54;;;;;;;;
+Preforeclosure;226691;Tracy St Augusta ME 04330;4bed;2bath;1,490sqft.;Single-Family;75;;;;;;;;
+Preforeclosure;128000;Old Belgrade Rd Augusta ME 04330;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Property Type Coming Soon;5;;;;;;;;
+Preforeclosure;248366;George St Augusta ME 04330;2bed;1.5bath;1,210sqft.;Single-Family;23;DOONAN GRAVES AND LONGORIA;100 Cummings Center Suite 225D;BEVERLY;MA;01915;(978) 921-2670;;
+Bankruptcy;Estimation Coming Soon;Eastern Ave # 1 Augusta ME 04330;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;36;NATHANIEL R. HULL, ESQ.;PO Box 586, ONE PORTLAND SQUARE;Portland;ME;04112;(207) 253-4726;District ME, Division 1;202 Harlow Street, 3rd Floor
+Preforeclosure;264197;Meadowrue Dr Augusta ME 04330;2bed;1bath;952sqft.;Single-Family;68;;;;;;;;
+Bankruptcy;306095;Town Farm Rd Sidney ME 04330;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;76;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 1;202 Harlow Street, 3rd Floor
+Preforeclosure;648046;Patriot Dr Biddeford ME 04005;3bed;2bath;2,087sqft.;Single-Family;12;;;;;;;;
+Bankruptcy;473843;Wildbrook Dr Biddeford ME 04005;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;90;NATHANIEL R. HULL, ESQ.;PO Box 586, ONE PORTLAND SQUARE;Portland;ME;04112;(207) 253-4726;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;476360;Graham St Biddeford ME 04005;2bed;1bath;1,494sqft.;Single-Family;117;;;;;;;;
+Preforeclosure;195000;Elm St Biddeford ME 04005;4bed;3bath;1,645sqft.;Multi-Family;159;;;;;;;;
+Preforeclosure;379651;Westland Ave Biddeford ME 04005;4bed;1bath;968sqft.;Single-Family;201;;;;;;;;
+Preforeclosure;579583;Cathedral Oaks Dr Biddeford ME 04005;3bed;3bath;1,508sqft.;Single-Family;40;;;;;;;;
+Bankruptcy;344300;Mount Pleasant St Biddeford ME 04005;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;98;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;249607;Elm St Biddeford ME 04005;3bed;2bath;1,063sqft.;Single-Family;131;;;;;;;;
+Preforeclosure;617129;Brown Farm Rd Biddeford ME 04005;4bed;3bath;2,302sqft.;Single-Family;164;;;;;;;;
+Preforeclosure;484021;Proctor Rd Biddeford ME 04005;4bed;1bath;1,791sqft.;Single-Family;215;;;;;;;;
+Bankruptcy;170566;Crest Ave Auburn ME 04210;1bed;1bath;715sqft.;Commercial;7;NATHANIEL R. HULL, ESQ.;PO Box 586, ONE PORTLAND SQUARE;Portland;ME;04112;(207) 253-4726;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;358218;Country Club Dr Auburn ME 04210;1bed;1bath;929sqft.;Single-Family;12;;;;;;;;
+Preforeclosure;296300;Webster St Auburn ME 04210;7bed;4bath;3,964sqft.;Multi-Family;26;;;;;;;;
+Preforeclosure;300486;Marston Hill Rd Auburn ME 04210;Bedrooms Coming Soon;2bath;1,074sqft.;Single-Family;75;;;;;;;;
+Preforeclosure;226800;Sixth St Auburn ME 04210;2bed;1bath;1,542sqft.;Single-Family;96;;;;;;;;
+Preforeclosure;280725;Eighth St Auburn ME 04210;3bed;3bath;1,440sqft.;Single-Family;12;;;;;;;;
+Bankruptcy;210410;Elmwood Rd Auburn ME 04210;3bed;1bath;1,561sqft.;Single-Family;16;ANTHONY J. MANHART;1 Canal Plz Fl 9, PO BOX 426;Portland;ME;04101;(207) 774-2635;District ME, Division 2;537 Congress Street, 2nd Floor
+Foreclosure;248794;Northern Ave Auburn ME 04210;2bed;1bath;1,228sqft.;Single-Family;72;;;;;;;;
+Bankruptcy;296610;Andrew Dr Auburn ME 04210;3bed;2bath;1,804sqft.;Single-Family;91;NATHANIEL R. HULL, ESQ.;PO Box 586, ONE PORTLAND SQUARE;Portland;ME;04112;(207) 253-4726;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;168700;Seventh St Auburn ME 04210;Bedrooms Coming Soon;2bath;2,283sqft.;Multi-Family;96;;;;;;;;
+Preforeclosure;247000;Partridge Ln Scarborough ME 04074;3bed;2bath;Square Footage Coming Soon;Land;27;;;;;;;;
+Preforeclosure;595755;Gunstock Rd Scarborough ME 04074;3bed;2bath;1,548sqft.;Single-Family;82;;;;;;;;
+Preforeclosure;688247;Evergreen Farms Rd Scarborough ME 04074;3bed;2bath;1,938sqft.;Single-Family;201;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Cammock Rd Scarborough ME 04074;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;243;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Cammock Rd Scarborough ME 04074;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;243;;;;;;;;
+Preforeclosure;7597007;Marion Jordan Rd Scarborough ME 04074;2bed;5bath;3,909sqft.;Single-Family;33;;;;;;;;
+Preforeclosure;574848;Huntley Dr Scarborough ME 04074;4bed;3bath;3,072sqft.;Single-Family;110;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Cammock Rd Scarborough ME 04074;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Property Type Coming Soon;243;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Cammock Rd Scarborough ME 04074;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;243;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Cammock Rd Scarborough ME 04074;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Single-Family;243;;;;;;;;
+Preforeclosure;666971;Merryman Ln Brunswick ME 04011;2bed;1bath;1,137sqft.;Single-Family;40;;;;;;;;
+Preforeclosure;474857;Willow Grove Rd Brunswick ME 04011;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Condo;131;;;;;;;;
+Preforeclosure;527922;Bickford Ave Brunswick ME 04011;3bed;3bath;2,016sqft.;Single-Family;264;;;;;;;;
+Bankruptcy;337292;Ward Cir Brunswick ME 04011;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;675;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor
+Preforeclosure;413790;Meadowbrook Rd Brunswick ME 04011;3bed;2bath;1,337sqft.;Single-Family;82;;;;;;;;
+Bankruptcy;353075;Emanuel Dr Brunswick ME 04011;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;163;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor
+Bankruptcy;310760;Adelard Dr Brunswick ME 04011;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;360;ANDREW M. DUDLEY, ESQ.;PO Box 429;Brunswick;ME;04011;(207) 725-1300;District ME, Division 2;537 Congress Street, 2nd Floor

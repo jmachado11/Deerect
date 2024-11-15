@@ -1,0 +1,172 @@
+[
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Alamo Springs Dr"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.846",
+            "longitude": "-122.014"
+        },
+        "url": "https://www.taxliens.com/address/Alamo-Springs-Dr-Alamo-CA-94507/62494038_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Via Serena"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.845",
+            "longitude": "-122.030"
+        },
+        "url": "https://www.taxliens.com/address/Via-Serena-Alamo-CA-94507/62474181_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Lackland Dr"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.848",
+            "longitude": "-121.966"
+        },
+        "url": "https://www.taxliens.com/address/Lackland-Dr-Alamo-CA-94507/62382258_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Ina Dr"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.857",
+            "longitude": "-122.025"
+        },
+        "url": "https://www.taxliens.com/address/Ina-Dr-Alamo-CA-94507/62264020_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Alta Sierra Pl"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.849",
+            "longitude": "-122.004"
+        },
+        "url": "https://www.taxliens.com/address/Alta-Sierra-Pl-Alamo-CA-94507/61992302_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Cross Rd"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.842",
+            "longitude": "-121.988"
+        },
+        "url": "https://www.taxliens.com/address/Cross-Rd-Alamo-CA-94507/62494126_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Danville Blvd"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.840",
+            "longitude": "-122.024"
+        },
+        "url": "https://www.taxliens.com/address/Danville-Blvd-Alamo-CA-94507/62415107_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "South Ct"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.840",
+            "longitude": "-122.037"
+        },
+        "url": "https://www.taxliens.com/address/South-Ct-Alamo-CA-94507/62264017_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Waverly Ct"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.853",
+            "longitude": "-122.003"
+        },
+        "url": "https://www.taxliens.com/address/Waverly-Ct-Alamo-CA-94507/62092312_lid"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "SingleFamilyResidence",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Alamo",
+            "addressRegion": "CA",
+            "postalCode": "94507",
+            "streetAddress": "Stonecastle Ct"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.871",
+            "longitude": "-122.043"
+        },
+        "url": "https://www.taxliens.com/address/Stonecastle-Ct-Alamo-CA-94507/61880804_lid"
+    }
+]

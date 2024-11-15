@@ -1,0 +1,101 @@
+type;price;address;bedrooms;bathrooms;square footage;property type;Day(s) On Site:;Trustee Name:;Trustee Address:;Trustee City:;Trustee State:;Trustee Zip:;Trustee Phone:;Court Name:;Court Address:
+BankruptcyNEW;282400;Melanie Dr New Castle DE 19720;3bed;1.5bath;Square Footage Coming Soon;Single-Family;1;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;323400;Sugarberry Dr New Castle DE 19720;3bed;2.5bath;Square Footage Coming Soon;Single-Family;6;;;;;;;;
+Bankruptcy;213500;Cox Neck Rd New Castle DE 19720;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Commercial;7;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;227900;Cherry St New Castle DE 19720;3bed;2bath;1,125sqft.;Single-Family;12;;;;;;;;
+Bankruptcy;349700;Weatherford Ct New Castle DE 19720;4bed;2.5bath;Square Footage Coming Soon;Single-Family;16;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+BankruptcyNEW;360400;Lesley Ln New Castle DE 19720;4bed;2.5bath;Square Footage Coming Soon;Single-Family;2;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;Estimation Coming Soon;Highland Blvd Apt G New Castle DE 19720;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;6;JEOFFREY L. BURTCH;PO Box 549;Wilmington;DE;19899;(302) 472-7427;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;272500;Guenever Dr New Castle DE 19720;4bed;1.5bath;Square Footage Coming Soon;Single-Family;9;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;Estimation Coming Soon;S Dupont Hwy Apt 9u New Castle DE 19720;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;14;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;222500;Bellanca Ln New Castle DE 19720;3bed;1bath;Square Footage Coming Soon;Single-Family;18;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;135900;Salem Church Rd Newark DE 19702;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;6;;;;;;;;
+Bankruptcy;228600;Hunter Dr Newark DE 19702;3bed;1.5bath;Square Footage Coming Soon;Single-Family;8;GEORGE L. MILLER;1628 John F Kennedy Blvd Ste 950;Philadelphia;PA;19103;(215) 561-0950;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;269901;S Bridlewood Dr Newark DE 19702;3bed;2.5bath;Square Footage Coming Soon;Single-Family;11;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;Estimation Coming Soon;Rembrandt Cir Newark DE 19702;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;12;JEOFFREY L. BURTCH;PO Box 549;Wilmington;DE;19899;(302) 472-7427;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;Estimation Coming Soon;Mapleshade Dr Newark DE 19702;4bed;2bath;2,144sqft.;Single-Family;17;McCabe Weisberg and Conway llc;1407 Foulk Road Suite 204;WILMINGTON;DE;19803;(302) 409-3520;;
+Preforeclosure;127800;Salem Church Rd Newark DE 19702;3bed;1bath;Square Footage Coming Soon;Single-Family;6;;;;;;;;
+Preforeclosure;210600;Jacobsen Dr Newark DE 19702;3bed;3bath;2,175sqft.;Condo;11;ORLANS;;;;;;;
+Preforeclosure;142000;Waters Edge Dr Newark DE 19702;2bed;2bath;Square Footage Coming Soon;Condo;13;;;;;;;;
+Bankruptcy;390900;Rosetree Ln Newark DE 19702;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;15;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;Estimation Coming Soon;Jacobsen Dr # 25 Newark DE 19702;3bed;2.5bath;Square Footage Coming Soon;Condo;17;;;;;;;;
+Preforeclosure;Estimation Coming Soon;S Broad St Middletown DE 19709;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;6;;;;;;;;
+Bankruptcy;350170;S Scott St Middletown DE 19709;3bed;1bath;Square Footage Coming Soon;Single-Family;7;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;Estimation Coming Soon;Tywyn Dr Middletown DE 19709;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;17;ORLANS PC;4250 Lancaster Pike Ste 140;WILMINGTON;DE;19805;(781) 790-7800;;
+Bankruptcy;447000;Dutch Neck Rd Middletown DE 19709;4bed;2bath;Square Footage Coming Soon;Single-Family;21;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;306068;Foxtail Ln Middletown DE 19709;3bed;2.5bath;Square Footage Coming Soon;Single-Family;35;GEORGE L. MILLER;1628 John F Kennedy Blvd Ste 950;Philadelphia;PA;19103;(215) 561-0950;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;457700;Boxwood Ln Middletown DE 19709;2bed;2bath;Square Footage Coming Soon;Single-Family;6;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;417700;Old School House Rd Middletown DE 19709;4bed;2.5bath;2,300sqft.;Single-Family;12;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Tywyn Drive Middletown DE 19709;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;17;;;;;;;;
+Bankruptcy;540300;Pintail Ct Middletown DE 19709;4bed;3.5bath;Square Footage Coming Soon;Single-Family;33;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;378800;Brick Mill Cir Middletown DE 19709;4bed;2.5bath;Square Footage Coming Soon;Single-Family;36;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;429100;Megan Dr Bear DE 19701;4bed;2.5bath;Square Footage Coming Soon;Single-Family;6;JEOFFREY L. BURTCH;PO Box 549;Wilmington;DE;19899;(302) 472-7427;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;331650;Mandalay Dr Bear DE 19701;3bed;2.5bath;Square Footage Coming Soon;Single-Family;20;;;;;;;;
+Bankruptcy;258500;Donna Marie Way Bear DE 19701;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;33;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;258600;Wimbledon Ct Bear DE 19701;3bed;2.5bath;Square Footage Coming Soon;Single-Family;36;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;308600;Lexington Dr Bear DE 19701;3bed;3bath;1,725sqft.;Single-Family;46;MCCABE WEISBERG & CONWAY;;;;;;;
+Preforeclosure;262200;Valerie Ln Bear DE 19701;3bed;2.5bath;Square Footage Coming Soon;Single-Family;13;;;;;;;;
+Bankruptcy;186500;S Huckleberry Ave Bear DE 19701;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;23;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;248700;Rue Madora Bear DE 19701;3bed;1.5bath;Square Footage Coming Soon;Single-Family;35;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;239100;Powder Way Bear DE 19701;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;41;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;439240;Longleaf Ln Bear DE 19701;4bed;3bath;2,000sqft.;Single-Family;46;ORLANS;;;;;;;
+ForeclosureNEW;118800;Chestnut St Wilmington DE 19805;2bed;1bath;Square Footage Coming Soon;Single-Family;2;;;;;;;;
+BankruptcyNEW;180699;Stroud St Wilmington DE 19805;3bed;1bath;Square Footage Coming Soon;Single-Family;2;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;Estimation Coming Soon;N Ogle Ave Apt 3 Wilmington DE 19805;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;7;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;231900;Brighton Ave Wilmington DE 19805;4bed;1bath;Square Footage Coming Soon;Single-Family;15;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;99392;Beech St Wilmington DE 19805;2bed;1bath;Square Footage Coming Soon;Single-Family;20;;;;;;;;
+ForeclosureNEW;219400;Brookside Ave Wilmington DE 19805;2bed;1bath;Square Footage Coming Soon;Single-Family;2;;;;;;;;
+Preforeclosure;107700;W 3rd St Wilmington DE 19805;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;6;;;;;;;;
+Preforeclosure;295213;Pyle St Wilmington DE 19805;2bed;2bath;1,300sqft.;Single-Family;12;;;;;;;;
+Preforeclosure;267295;Seneca Rd Wilmington DE 19805;3bed;1bath;Square Footage Coming Soon;Single-Family;20;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Maple St Wilmington DE 19805;3bed;1bath;Square Footage Coming Soon;Single-Family;19;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+BankruptcyNEW;305270;Orchard Ave Dover DE 19901;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;2;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Foreclosure;144450;S Halsey Rd Dover DE 19901;3bed;1bath;Square Footage Coming Soon;Single-Family;9;;;;;;;;
+Preforeclosure;287700;Tina Dr Dover DE 19901;3bed;2bath;1,232sqft.;Single-Family;11;ORLANS;;;;;;;
+Preforeclosure;292560;Kings Hwy Dover DE 19901;3bed;2bath;1,384sqft.;Single-Family;11;ORLANS;;;;;;;
+Preforeclosure;203215;Starboard Ct Dover DE 19901;2bed;2bath;1,320sqft.;Condo;11;ORLANS;;;;;;;
+Bankruptcy;Estimation Coming Soon;Royal Grant Way # M Dover DE 19901;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;4;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;277700;N Planters Ln Dover DE 19901;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;9;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;298320;Mahogany Pl Dover DE 19901;2bed;3bath;1,542sqft.;Single-Family;11;MCCABE WEISBERG & CONWAY;;;;;;;
+Preforeclosure;391050;Kings Hwy Dover DE 19901;3bed;2bath;2,746sqft.;Single-Family;11;ROBERTSON ANSCHUTZ SCHNEID & CRANE;;;;;;;
+Preforeclosure;410900;Garden Crest Ln Dover DE 19901;4bed;3bath;2,658sqft.;Single-Family;11;ORLANS;;;;;;;
+Foreclosure;334300;New St Wilmington DE 19808;3bed;1.5bath;Square Footage Coming Soon;Single-Family;10;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Heritage Court Dr Apt 4b Wilmington DE 19808;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;20;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;254900;Lincoln Ave Marshallton DE 19808;2bed;1bath;Square Footage Coming Soon;Single-Family;41;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;278400;Orsini Ln Wilmington DE 19808;2bed;1bath;Square Footage Coming Soon;Single-Family;55;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;343200;Elderon Dr Wilmington DE 19808;3bed;1.5bath;Square Footage Coming Soon;Single-Family;88;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;Estimation Coming Soon;Golf View Dr Apt C2 Wilmington DE 19808;2bed;2bath;1,046sqft.;Condo;11;REGER RIZZO & DARNALL;;;;;;;
+Bankruptcy;328801;Glen Avon Rd Wilmington DE 19808;3bed;1.5bath;Square Footage Coming Soon;Single-Family;21;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;339700;S Woodmill Dr Wilmington DE 19808;3bed;1.5bath;Square Footage Coming Soon;Single-Family;48;;;;;;;;
+Bankruptcy;326600;Nelson Ln Wilmington DE 19808;3bed;1.5bath;Square Footage Coming Soon;Single-Family;55;JEOFFREY L. BURTCH;PO Box 549;Wilmington;DE;19899;(302) 472-7427;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;Estimation Coming Soon;Deville Cir # 3 Wilmington DE 19808;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;89;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+BankruptcyNEW;214400;Woodmill Dr Dover DE 19904;3bed;2.5bath;1,415sqft.;Single-Family;1;;;;;;;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;209720;Kenton Rd Dover DE 19904;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;6;GEORGE L. MILLER;1628 John F Kennedy Blvd Ste 950;Philadelphia;PA;19103;(215) 561-0950;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;127755;Central Church Rd Dover DE 19904;Bedrooms Coming Soon;Bathrooms Coming Soon;1,216sqft.;Agricultural;7;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;328293;Saint Bernadino Cir Dover DE 19904;4bed;3bath;2,040sqft.;Single-Family;11;MCCABE WEISBERG & CONWAY;;;;;;;
+Preforeclosure;Estimation Coming Soon;Par Haven Dr Apt E31 Dover DE 19904;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Condo;11;MORTON VALIHURA & ZEBATO;;;;;;;
+Bankruptcy;176000;Kenton Rd Dover DE 19904;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Agricultural;5;JEOFFREY L. BURTCH;PO Box 549;Wilmington;DE;19899;(302) 472-7427;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;275965;Northdown Dr Dover DE 19904;4bed;2.5bath;1,900sqft.;Single-Family;6;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;148853;Forest Creek Dr Dover DE 19904;3bed;2bath;1,340sqft.;Single-Family;11;STERN & EISENBERG;;;;;;;
+Preforeclosure;93020;Par Haven Dr Apt E23 Dover DE 19904;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Condo;11;MORTON VALIHURA & ZEBATO;;;;;;;
+Preforeclosure;281760;Quail Hollow Dr Dover DE 19904;4bed;2.5bath;1,590sqft.;Single-Family;11;;;;;;;;
+BankruptcyNEW;132600;Creekwood Cir Millsboro DE 19966;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;2;;;;;;;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;300173;Oak Orchard Rd Millsboro DE 19966;Bedrooms Coming Soon;Bathrooms Coming Soon;1,072sqft.;Single-Family;10;MARINOSCI LAW GROUP;;;;;;;
+Preforeclosure;239564;Kent Dr Millsboro DE 19966;Bedrooms Coming Soon;Bathrooms Coming Soon;1,232sqft.;Single-Family;15;;;;;;;;
+Preforeclosure;Estimation Coming Soon;Bobbys Branch Rd Millsboro DE 19966;Bedrooms Coming Soon;Bathrooms Coming Soon;0sqft.;Property Type Coming Soon;18;WHITEFORD, TAYLOR & PRESTON, LLP;;;;;;;
+Preforeclosure;Estimation Coming Soon;Bobbys Branch Rd # 43 Millsboro DE 19966;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;22;;;;;;;;
+Preforeclosure;255170;John B Dr Millsboro DE 19966;3bed;Bathrooms Coming Soon;2,240sqft.;Mobile Home;10;ORLANS;;;;;;;
+Preforeclosure;203100;Delaware Ave Millsboro DE 19966;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;11;;;;;;;;
+Fixer Upper;272000;N Morris St Millsboro DE 19966;4bed;2bath;Square Footage Coming Soon;Property Type Coming Soon;17;;;;;;;;
+Bankruptcy;352658;Woodlake Cir Millsboro DE 19966;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;19;JEOFFREY L. BURTCH;PO Box 549;Wilmington;DE;19899;(302) 472-7427;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;595077;Samuel Adams Cir Millsboro DE 19966;4bed;Bathrooms Coming Soon;3,259sqft.;Single-Family;29;;;;;;;;
+Bankruptcy;Estimation Coming Soon;Village Cir Apt B Newark DE 19713;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;7;ALFRED T. GIULIANO;2301 E Evesham Rd Ste 210;Voorhees;NJ;08043;(856) 767-3000;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;Estimation Coming Soon;Fountainview Cir Apt 411 Newark DE 19713;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Property Type Coming Soon;12;GEORGE L. MILLER;1628 John F Kennedy Blvd Ste 950;Philadelphia;PA;19103;(215) 561-0950;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;265700;Powderhorn Dr Newark DE 19713;3bed;1.5bath;Square Footage Coming Soon;Single-Family;29;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;246000;Chippendale Cir Newark DE 19713;3bed;1bath;Square Footage Coming Soon;Single-Family;33;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Preforeclosure;229901;Montrose Dr Newark DE 19713;3bed;1bath;Square Footage Coming Soon;Single-Family;38;;;;;;;;
+Preforeclosure;189000;Unison Ct Newark DE 19713;3bed;2bath;Square Footage Coming Soon;Single-Family;13;;;;;;;;
+Bankruptcy;121000;Clover Ln Newark DE 19713;Bedrooms Coming Soon;Bathrooms Coming Soon;Square Footage Coming Soon;Single-Family;19;DAVID W. CARICKHOFF;1313 N Market St Ste 5400;Wilmington;DE;19801;(302) 295-0191;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;272200;Shue Dr Newark DE 19713;3bed;1bath;Square Footage Coming Soon;Single-Family;31;WILLIAM F JAWORSKI, JR;824 N Market St Ste 1002;Wilmington;DE;19801;(302) 656-0123;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;328900;Majestic Dr Newark DE 19713;4bed;2.5bath;Square Footage Coming Soon;Single-Family;36;JEOFFREY L. BURTCH;PO Box 549;Wilmington;DE;19899;(302) 472-7427;District DE, Division 1;824 North Market Street, 3rd Floor
+Bankruptcy;287000;Campfield Rd Newark DE 19713;3bed;1bath;Square Footage Coming Soon;Single-Family;41;MARC H. BAER;455 Main St;Reisterstown;MD;21136;(443) 712-2529;District MD, Division 1;101 West Lombard Street, Suite 8530
