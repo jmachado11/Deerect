@@ -36,6 +36,7 @@ export async function login(formData: LoginFormData) {
 
   if (error) {
     console.log(error)
+    return [1,error]
   }else{
     console.log(data)
     console.log(Request.toString())

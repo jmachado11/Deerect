@@ -1,32 +1,32 @@
 "use client";
 import Link from "next/link";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { login } from "@/lib/auth-actions";
 import { useRouter } from "next/navigation";
-
+import { useState } from "react";
 
 export const LoginFormSchema = z.object({
-  email: z.string().email({ message: "Invalid Credentials" }).trim(),
-  
+  email: z.string().email({ message: "Please enter a valid email address" }).trim(),
   password: z
     .string()
-    .min(8, { message: "Invalid Credentials" })
-    .regex(/[a-zA-Z]/, { message: "Invalid Credentials" })
-    .regex(/[0-9]/, { message: "Invalid Credentials" })
-    .regex(/[^a-zA-Z0-9]/, { message: "Invalid Credentials" })
+    .min(8, { message: "Password must be at least 8 characters" })
+    .regex(/[a-zA-Z]/, { message: "Password must contain at least one letter" })
+    .regex(/[0-9]/, { message: "Password must contain at least one number" })
+    .regex(/[^a-zA-Z0-9]/, { message: "Password must contain at least one special character" })
     .trim(),
 });
 
-
 const Form = () => {
+  const [serverError, setServerError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const {
     register,
     handleSubmit,
-    control,
     formState: { errors },
+    setError,
   } = useForm({
     resolver: zodResolver(LoginFormSchema),
   });
@@ -34,85 +34,99 @@ const Form = () => {
   const router = useRouter();
 
   const onSubmit = async (data) => {
-    console.log("Form Data:", data);
+    setIsSubmitting(true);
+    setServerError("");
+
     try {
-      const loginData = await login(data);
-      // Redirect to another page or show success message
-      console.log("success")
-      console.log(loginData)
-      //router.push("/");
+      const response = await login(data);
+      
+      if (!response) {
+        // If login is successful, the server action will redirect
+        // No need to handle success case here
+        return;
+      }
+
+      // If we reach here, there was an error since successful login redirects
+      setServerError("Invalid email or password. Please try again.");
+      
     } catch (error) {
-      // Handle signup errors here
       console.error("Login Error:", error);
+      
+      // Handle specific error messages from Supabase
+      if (error?.message?.includes("Invalid login credentials")) {
+        setServerError("Invalid email or password. Please try again.");
+      } else if (error?.message?.includes("Too many requests")) {
+        setServerError("Too many attempts. Please try again later.");
+      } else if (error?.message?.includes("network")) {
+        setServerError("Network error. Please check your connection and try again.");
+      } else {
+        setServerError("An unexpected error occurred. Please try again later.");
+      }
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
+  // Combine all validation errors into a single message
+  const getValidationError = () => {
+    if (Object.keys(errors).length === 0) return "";
+    
+    // Only show a generic error message for any validation error
+    return "Invalid email or password. Please try again.";
+  };
+
+  const validationError = getValidationError();
 
   return (
-    <form action="#" onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
       <div className="heading text-center">
         <h3>Login to your account</h3>
         <p className="text-center">
-          Dont have an account?{" "}
+          Don't have an account?{" "}
           <Link href="/register" className="text-thm">
             Sign Up!
           </Link>
         </p>
       </div>
-      {/* End .heading */}
 
-      <div className="input-group mb-2 mr-sm-2">
-        <input
-          type="text"
-          className="form-control"
-          required
-          placeholder="Email"
-          {...register("email")}
-        />
-      </div>
-      {errors.email || errors.password && (
-        <p className="text-red-500 text-sm">Invalid Credentials</p>
+      {/* Display both server and validation errors in the same style */}
+      {(serverError || validationError) && (
+        <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded relative mb-4">
+          {serverError || validationError}
+        </div>
       )}
-      {/* End .input-group */}
 
-      <div className="input-group form-group">
-        <input
-          type="password"
-          className="form-control"
-          required
-          placeholder="Password"
-          {...register("password")}
-        />
+      <div className="space-y-2">
+        <div className="input-group mb-2 mr-sm-2">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Email"
+            {...register("email")}
+            disabled={isSubmitting}
+          />
+        </div>
       </div>
-      {errors.email || errors.password && (
-        <p className="text-red-500 text-sm">Invalid Credentials</p>
-      )}
-      {/* End .input-group */}
 
-      {/* <div className="form-group form-check custom-checkbox mb-3">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="remeberMe"
-        />
-        <label
-          className="form-check-label form-check-label"
-          htmlFor="remeberMe"
-        >
-          Remember me
-        </label>
+      <div className="space-y-2">
+        <div className="input-group form-group">
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Password"
+            {...register("password")}
+            disabled={isSubmitting}
+          />
+        </div>
+      </div>
 
-        <a className="btn-fpswd float-end" href="#">
-          Forgot password?
-        </a>
-      </div> */}
-      {/* End .form-group */}
-
-      <button type="submit" className="btn btn-log w-100 btn-thm">
-        Log In
+      <button 
+        type="submit" 
+        className="btn btn-log w-100 btn-thm"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? 'Logging in...' : 'Log In'}
       </button>
-      {/* login button */}
 
       
     </form>
