@@ -7,7 +7,7 @@ import MobileMenu from "../../common/header/MobileMenu";
 import CopyrightFooter from "../../common/footer/CopyrightFooter";
 import BreadCrumb2 from "./BreadCrumb2";
 
-const ITEMS_PER_PAGE = 5;
+const ITEMS_PER_PAGE = 10;
 
 const Index = () => {
   const supabase = createClient();
@@ -23,40 +23,44 @@ const Index = () => {
       try {
         setLoading(true);
 
-        const { data: { user } } = await supabase.auth.getUser()
-
-        const userId = user.id
-
+        // Get current user (if any)
+        const { data: { user } } = await supabase.auth.getUser();
         
-        // Fetch from Supabase
-        const { data: supabaseListings, error } = await supabase
-          .from('Listing')
-          .select('*')
-          .neq('owner_id',userId);
+        // Fetch from Supabase - modify query based on user status
+        const query = supabase.from('Listing').select('*');
+        
+        // Only filter by owner_id if user is logged in
+        if (user) {
+          query.neq('owner_id', user.id);
+        }
+        
+        const { data: supabaseListings, error } = await query;
 
         if (error) {
           console.error('Error fetching listings:', error);
           return;
         }
 
-        // Record views for Supabase listings
-        const now = new Date();
-        const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate()).toISOString();
+        // Only record views if user is logged in
+        if (user) {
+          const now = new Date();
+          const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate()).toISOString();
 
-        await Promise.all(supabaseListings.map(async (item) => {
-          const { data: existingViews } = await supabase
-            .from('Listing Views')
-            .select('id')
-            .eq('listing_id', item.id)
-            .gte('created_at', startOfDay)
-            .limit(1);
-
-          if (!existingViews?.length) {
-            await supabase
+          await Promise.all(supabaseListings.map(async (item) => {
+            const { data: existingViews } = await supabase
               .from('Listing Views')
-              .insert({ listing_id: item.id });
-          }
-        }));
+              .select('id')
+              .eq('listing_id', item.id)
+              .gte('created_at', startOfDay)
+              .limit(1);
+
+            if (!existingViews?.length) {
+              await supabase
+                .from('Listing Views')
+                .insert({ listing_id: item.id });
+            }
+          }));
+        }
 
         // Load scraped listings
         const scrapedListings = loadScrapedListings();
@@ -74,6 +78,8 @@ const Index = () => {
 
       } catch (error) {
         console.error('Unexpected error:', error);
+        // Set empty listings array in case of error to prevent undefined state
+        setListings([]);
       } finally {
         setLoading(false);
       }
