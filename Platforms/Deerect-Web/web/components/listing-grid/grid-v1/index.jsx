@@ -11,12 +11,65 @@ const ITEMS_PER_PAGE = 10;
 
 const Index = () => {
   const supabase = createClient();
-  const [getState, setState] = useState("NJ");
+  const [getState, setState] = useState("AL");
   const [listings, setListings] = useState([]);
   const [isGridOrList, setIsGridOrList] = useState(true);
   const [offerAmounts, setOfferAmounts] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
+
+  const US_STATES = [
+    { value: 'AL', label: 'Alabama' },
+    { value: 'AK', label: 'Alaska' },
+    { value: 'AZ', label: 'Arizona' },
+    { value: 'AR', label: 'Arkansas' },
+    { value: 'CA', label: 'California' },
+    { value: 'CO', label: 'Colorado' },
+    { value: 'CT', label: 'Connecticut' },
+    { value: 'DE', label: 'Delaware' },
+    { value: 'FL', label: 'Florida' },
+    { value: 'GA', label: 'Georgia' },
+    { value: 'HI', label: 'Hawaii' },
+    { value: 'ID', label: 'Idaho' },
+    { value: 'IL', label: 'Illinois' },
+    { value: 'IN', label: 'Indiana' },
+    { value: 'IA', label: 'Iowa' },
+    { value: 'KS', label: 'Kansas' },
+    { value: 'KY', label: 'Kentucky' },
+    { value: 'LA', label: 'Louisiana' },
+    { value: 'ME', label: 'Maine' },
+    { value: 'MD', label: 'Maryland' },
+    { value: 'MA', label: 'Massachusetts' },
+    { value: 'MI', label: 'Michigan' },
+    { value: 'MN', label: 'Minnesota' },
+    { value: 'MS', label: 'Mississippi' },
+    { value: 'MO', label: 'Missouri' },
+    { value: 'MT', label: 'Montana' },
+    { value: 'NE', label: 'Nebraska' },
+    { value: 'NV', label: 'Nevada' },
+    { value: 'NH', label: 'New Hampshire' },
+    { value: 'NJ', label: 'New Jersey' },
+    { value: 'NM', label: 'New Mexico' },
+    { value: 'NY', label: 'New York' },
+    { value: 'NC', label: 'North Carolina' },
+    { value: 'ND', label: 'North Dakota' },
+    { value: 'OH', label: 'Ohio' },
+    { value: 'OK', label: 'Oklahoma' },
+    { value: 'OR', label: 'Oregon' },
+    { value: 'PA', label: 'Pennsylvania' },
+    { value: 'RI', label: 'Rhode Island' },
+    { value: 'SC', label: 'South Carolina' },
+    { value: 'SD', label: 'South Dakota' },
+    { value: 'TN', label: 'Tennessee' },
+    { value: 'TX', label: 'Texas' },
+    { value: 'UT', label: 'Utah' },
+    { value: 'VT', label: 'Vermont' },
+    { value: 'VA', label: 'Virginia' },
+    { value: 'WA', label: 'Washington' },
+    { value: 'WV', label: 'West Virginia' },
+    { value: 'WI', label: 'Wisconsin' },
+    { value: 'WY', label: 'Wyoming' }
+  ];
 
   useEffect(() => {
     async function fetchData() {
@@ -27,7 +80,7 @@ const Index = () => {
         const { data: { user } } = await supabase.auth.getUser();
         
         // Fetch from Supabase - modify query based on user status
-        const query = supabase.from('Listing').select('*');
+        const query = supabase.from('Listing').select('*').eq('state', getState);
         
         // Only filter by owner_id if user is logged in
         if (user) {
@@ -63,7 +116,7 @@ const Index = () => {
         }
 
         // Load scraped listings
-        const scrapedListings = loadScrapedListings();
+        const scrapedListings = loadScrapedListings(getState);
         
         // Combine and set all listings
         const allListings = [...supabaseListings, ...scrapedListings];
@@ -170,24 +223,40 @@ const Index = () => {
           </div>
 
           <div className="row">
-            <div className="col-md-12 col-lg-8">
-              <div className="grid_list_search_result">
-                <div className="row align-items-center">
-                  <div className="col-sm-12 col-md-4 col-lg-4 col-xl-5">
-                    <div className="left_area tac-xsd">
-                      <p>
-                        {loading ? (
-                          "Loading..."
-                        ) : (
-                          <span>
-                            {listings.length} Search results
-                          </span>
-                        )}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  {/* Add the dropdown here */}
+  <div className="col-md-12 col-lg-8">
+    <div className="grid_list_search_result">
+      <div className="row align-items-center">
+        <div className="col-sm-12 col-md-4 col-lg-4 col-xl-5">
+          <div className="left_area tac-xsd">
+            <p>
+              {loading ? (
+                "Loading..."
+              ) : (
+                <span>
+                  {listings.length} Search results
+                </span>
+              )}
+            </p>
+          </div>
+        </div>
+        {/* Add the state dropdown */}
+        <div className="col-sm-12 col-md-8 col-lg-8 col-xl-7">
+          <div className="right_area text-end tac-xsd">
+            <select 
+              value={getState} 
+              onChange={(e) => setState(e.target.value)}
+              className="form-select"
+              style={{ maxWidth: '200px', display: 'inline-block' }}
+            >
+              {US_STATES.map((state) => (
+                <option key={state.value} value={state.value}>{state.label}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
 
               <div className="row">
                 {currentListings.map((item) => (
@@ -207,37 +276,81 @@ const Index = () => {
               </div>
 
               {/* Pagination */}
+              {/* Pagination */}
               <div className="row">
                 <div className="col-lg-12 mt-3">
                   <div className="mbp_pagination">
                     <ul className="page_navigation">
-                      <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
+                      {/* First page / Skip backward 10 */}
+                      <li className={`page-item ${currentPage <= 1 ? 'disabled' : ''}`}>
                         <button 
                           className="page-link" 
-                          onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                          onClick={() => setCurrentPage(Math.max(1, currentPage - 10))}
+                          disabled={currentPage <= 1}
                         >
-                          Prev
+                          &laquo;
                         </button>
                       </li>
-                      {[...Array(totalPages)].map((_, index) => (
-                        <li 
-                          key={index + 1} 
-                          className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}
-                        >
-                          <button
-                            className="page-link"
-                            onClick={() => setCurrentPage(index + 1)}
-                          >
-                            {index + 1}
-                          </button>
-                        </li>
-                      ))}
-                      <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
+
+                      {/* Previous 5 pages */}
+                      <li className={`page-item ${currentPage <= 1 ? 'disabled' : ''}`}>
                         <button 
                           className="page-link" 
-                          onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                          onClick={() => setCurrentPage(Math.max(1, currentPage - 5))}
+                          disabled={currentPage <= 1}
                         >
-                          Next
+                          &lsaquo;
+                        </button>
+                      </li>
+
+                      {/* Page numbers */}
+                      {(() => {
+                        const pageNumbers = [];
+                        let startPage = Math.max(1, Math.min(currentPage - 4, totalPages - 9));
+                        let endPage = Math.min(startPage + 9, totalPages);
+                        
+                        // Adjust startPage if we're near the end to always show 10 pages if possible
+                        if (endPage - startPage < 9 && startPage > 1) {
+                          startPage = Math.max(1, endPage - 9);
+                        }
+
+                        for (let i = startPage; i <= endPage; i++) {
+                          pageNumbers.push(
+                            <li 
+                              key={i} 
+                              className={`page-item ${currentPage === i ? 'active' : ''}`}
+                            >
+                              <button
+                                className="page-link"
+                                onClick={() => setCurrentPage(i)}
+                              >
+                                {i}
+                              </button>
+                            </li>
+                          );
+                        }
+                        return pageNumbers;
+                      })()}
+
+                      {/* Next 5 pages */}
+                      <li className={`page-item ${currentPage >= totalPages ? 'disabled' : ''}`}>
+                        <button 
+                          className="page-link" 
+                          onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 5))}
+                          disabled={currentPage >= totalPages}
+                        >
+                          &rsaquo;
+                        </button>
+                      </li>
+
+                      {/* Last page / Skip forward 10 */}
+                      <li className={`page-item ${currentPage >= totalPages ? 'disabled' : ''}`}>
+                        <button 
+                          className="page-link" 
+                          onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 10))}
+                          disabled={currentPage >= totalPages}
+                        >
+                          &raquo;
                         </button>
                       </li>
                     </ul>
