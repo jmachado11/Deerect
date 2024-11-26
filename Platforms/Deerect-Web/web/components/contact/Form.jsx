@@ -20,36 +20,34 @@ const Form = () => {
     setSubmitSuccess(false);
   
     try {
-      const emailResult1 = await sendEmail(
-        'martino.volcy02@gmail.com', 
-        `New message from ${data.name} on Deerect: ${data.subject}`, // Email subject
-        `
-        Name: ${data.name}
-        Email: ${data.email}
-        Phone: ${data.phone}
-        Message: ${data.message}
-        ` // Email text content
-      );
-  
-      if (!emailResult.success) {
-        throw new Error(emailResult1.error || 'Failed to send message.');
-      }
+      const emails = [
+        'martino.volcy02@gmail.com',
+        'jm811machado@gmail.com'
+      ];
 
-      const emailResult2 = await sendEmail(
-        'jm811machado@gmail.com', // Recipient email 
-        `New message from ${data.name} on Deerect: ${data.subject}`, // Email subject
-        `
-        Name: ${data.name}
-        Email: ${data.email}
-        Phone: ${data.phone}
-        Message: ${data.message}
-        ` // Email text content
+      const emailPromises = emails.map(email => 
+        sendEmail(
+          email, 
+          `New message from ${data.name} on Deerect: ${data.subject}`,
+          `
+          Name: ${data.name}
+          Email: ${data.email}
+          Phone: ${data.phone}
+          Message: ${data.message}
+          `
+        )
       );
-  
-      if (!emailResult.success) {
-        throw new Error(emailResult2.error || 'Failed to send message.');
-      }
 
+      const results = await Promise.allSettled(emailPromises);
+
+      const failedEmails = results.filter(
+        result => result.status === 'rejected' || 
+        (result.status === 'fulfilled' && !result.value.success)
+      );
+
+      if (failedEmails.length > 0) {
+        throw new Error('Failed to send one or more emails');
+      }
   
       setSubmitSuccess(true);
       reset();
@@ -78,6 +76,7 @@ const Form = () => {
               className={`form-control ${errors.name ? 'is-invalid' : ''}`}
               type="text"
               placeholder="Name"
+              disabled={isSubmitting}
             />
             {errors.name && (
               <div className="invalid-feedback">{errors.name.message}</div>
@@ -98,6 +97,7 @@ const Form = () => {
               className={`form-control ${errors.email ? 'is-invalid' : ''}`}
               type="email"
               placeholder="Email"
+              disabled={isSubmitting}
             />
             {errors.email && (
               <div className="invalid-feedback">{errors.email.message}</div>
@@ -118,6 +118,7 @@ const Form = () => {
               className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
               type="tel"
               placeholder="Phone (10 digits)"
+              disabled={isSubmitting}
             />
             {errors.phone && (
               <div className="invalid-feedback">{errors.phone.message}</div>
@@ -138,6 +139,7 @@ const Form = () => {
               className={`form-control ${errors.subject ? 'is-invalid' : ''}`}
               type="text"
               placeholder="Subject"
+              disabled={isSubmitting}
             />
             {errors.subject && (
               <div className="invalid-feedback">{errors.subject.message}</div>
@@ -158,6 +160,7 @@ const Form = () => {
               className={`form-control ${errors.message ? 'is-invalid' : ''}`}
               rows="8"
               placeholder="Your Message"
+              disabled={isSubmitting}
             ></textarea>
             {errors.message && (
               <div className="invalid-feedback">{errors.message.message}</div>

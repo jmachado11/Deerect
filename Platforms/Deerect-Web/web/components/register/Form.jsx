@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -32,13 +33,12 @@ export const SignupFormSchema = z.object({
       message: "Password must contain at least one special character.",
     })
     .trim(),
+  terms: z.boolean().refine(val => val === true, { message: "You must accept the terms." })
 });
-
-// TypeScript type for form data
-//type SignupFormData = z.infer<typeof SignupFormSchema>;
 
 // React Hook Form with Zod integration
 const Form = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
     handleSubmit,
@@ -51,6 +51,7 @@ const Form = () => {
   const router = useRouter();
 
   const onSubmit = async (data) => {
+    setIsSubmitting(true);
     console.log("Form Data:", data);
     try {
       await signup(data);
@@ -59,6 +60,8 @@ const Form = () => {
     } catch (error) {
       // Handle signup errors here
       console.error("Signup Error:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -81,6 +84,7 @@ const Form = () => {
           className="form-control"
           placeholder="Full Name"
           {...register("fullName")}
+          disabled={isSubmitting}
         />
       </div>
       {errors.fullName && (
@@ -94,6 +98,7 @@ const Form = () => {
           className="form-control"
           placeholder="Email"
           {...register("email")}
+          disabled={isSubmitting}
         />
       </div>
       {errors.email && (
@@ -115,6 +120,7 @@ const Form = () => {
               country="US"
               withCountryCallingCode
               required
+              disabled={isSubmitting}
             />
           )}
         />
@@ -130,6 +136,7 @@ const Form = () => {
           className="form-control"
           placeholder="Password"
           {...register("password")}
+          disabled={isSubmitting}
         />
       </div>
       {errors.password && (
@@ -141,22 +148,26 @@ const Form = () => {
         <input
           className="form-check-input"
           type="checkbox"
-          {...register("terms", { required: true })}
+          {...register("terms")}
           id="terms"
+          disabled={isSubmitting}
         />
         <label className="form-check-label" htmlFor="terms">
           I have read and accept the Terms and Privacy Policy.
         </label>
       </div>
       {errors.terms && (
-        <p className="text-red-500 text-sm">You must accept the terms.</p>
+        <p className="text-red-500 text-sm">{errors.terms.message}</p>
       )}
 
       {/* Submit Button */}
-      <button type="submit" className="btn btn-log w-100 btn-thm">
-        Register
+      <button 
+        type="submit" 
+        className="btn btn-log w-100 btn-thm"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Submitting..." : "Register"}
       </button>
-      
     </form>
   );
 };
