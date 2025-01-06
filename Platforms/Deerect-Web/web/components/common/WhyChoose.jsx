@@ -3,23 +3,20 @@ const WhyChoose = ({ style = "" }) => {
     {
       id: 1,
       icon: "flaticon-high-five",
-      title: "Trusted By Thousands",
-      descriptions: `Aliquam dictum elit vitae mauris facilisis at dictum urna
-      dignissim donec vel lectus vel felis.`,
+      title: "Our Services",
+      descriptions: `We simplify the tax lien by cutting making it as simple as investing in stocks.`,
     },
     {
       id: 2,
       icon: "flaticon-home-1",
-      title: "Wide Renge Of Properties",
-      descriptions: `Aliquam dictum elit vitae mauris facilisis at dictum urna
-      dignissim donec vel lectus vel felis.`,
+      title: "Wide Renge Of Tax Liens",
+      descriptions: `Largest selection of Tax Liens available for purchase anywhere.`,
     },
     {
       id: 3,
       icon: "flaticon-profit",
-      title: "Financing Made Easy",
-      descriptions: `Aliquam dictum elit vitae mauris facilisis at dictum urna
-      dignissim donec vel lectus vel felis.`,
+      title: "No need to travel",
+      descriptions: `The entire tax lien investment process is now centralized in one place online.`,
     },
   ];
 

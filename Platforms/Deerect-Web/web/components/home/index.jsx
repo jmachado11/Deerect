@@ -10,6 +10,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import WhyChoose from "../common/WhyChoose";
 import PopupSignInUp from "../common/PopupSignInUp";
+import Pricing from "@/components/membership/Pricing"
 
 const Index = () => {
   return (
@@ -27,7 +28,7 @@ const Index = () => {
       <Hero />
 
       {/* <!-- Feature Properties --> */}
-      <section id="feature-property" className="feature-property bgc-f7">
+      {/* <section id="feature-property" className="feature-property bgc-f7">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -43,18 +44,51 @@ const Index = () => {
             </div>
           </div>
         </div>
+      </section> */}
+
+      {/* <!-- Why Chose Us --> */}
+      <section id="why-chose" className="whychose_us bgc-f7 pb30">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 offset-lg-3">
+              <div className="main-title text-center">
+                <h2>Why Choose Us</h2>
+                <p>We provide full service at every step.</p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <WhyChoose />
+          </div>
+        </div>
       </section>
 
-      
+      {/* <!-- Why Chose Us --> */}
+      <section id="why-chose" className="whychose_us bgc-f7 pb30">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 offset-lg-3">
+              <div className="main-title text-center">
+                <h2>Pricing</h2>
+                <p>We provide full service at every step.</p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <Pricing />
+          </div>
+        </div>
+      </section>
+
 
       {/* <!-- Our Footer --> */}
-      <section className="footer_one">
+      {/* <section className="footer_one">
         <div className="container">
           <div className="row">
             <Footer />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Our Footer Bottom Area --> */}
       <section className="footer_middle_area pt40 pb40">

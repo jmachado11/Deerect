@@ -31,7 +31,7 @@ const Header = () => {
         <Link href="/" className="navbar_brand float-start dn-smd">
         <Image
               width={200}
-              height={125}
+              height={90}
               className="nav_logo_img contain mt-20 "
               src="/assets/images/Deerect (white red).png"
               alt="header-logo2.png"

@@ -88,7 +88,7 @@ const FavouritProducts = () => {
             <span className="flaticon-garbage"></span>
           </a>
         </li>
-        <li
+        {/* <li
           className="list-inline-item"
           data-toggle="tooltip"
           data-placement="top"
@@ -97,7 +97,7 @@ const FavouritProducts = () => {
           <Link href={`/home/${item.listing_id}`}>
             <span className="flaticon-right-arrow"></span>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   ));

@@ -152,27 +152,25 @@ const Index = () => {
     setEditingListingId(null);
   };
 
-  // Function to handle deleting a listing
   const handleDeleteListing = async (id) => {
     const confirmDelete = window.confirm('Are you sure you want to delete this listing?');
     if (!confirmDelete) {
       return;
     }
-
+  
     try {
-      // Delete the listing from the database
       const { error } = await supabase
         .from('Listing')
         .delete()
         .eq('id', id);
-
+  
       if (error) {
         console.error('Error deleting listing:', error);
         setError('Failed to delete the listing.');
-      } else {
-        // Remove the listing from the state
-        setListings((prevListings) => prevListings.filter((listing) => listing.id !== id));
+        return;
       }
+  
+      setListings((prevListings) => prevListings.filter((listing) => listing.id !== id));
     } catch (err) {
       console.error('Error:', err);
       setError('An error occurred while deleting the listing.');

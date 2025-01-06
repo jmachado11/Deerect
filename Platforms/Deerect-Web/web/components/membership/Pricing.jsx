@@ -2,36 +2,38 @@ const Pricing = () => {
   const pricingContent = [
     {
       id: 1,
-      price: "56",
-      title: "Standard Plan",
+      price: "Free",
+      title: "Standard",
       features: [
-        "50 Property Listings",
-        "60 Days Availability",
-        "20 Featured Property",
-        "Limited Support",
+        "Unlimited Tax Lien Listings",
+        "Unlimited Tax Lien Purchases",
+        "24/7 Customer Support",
+        
       ],
+      isCurrentPlan: true,
     },
     {
       id: 2,
-      price: "190",
-      title: "Extended Plan",
+      price: "Contact Us",
+      title: "Pro",
       features: [
-        "50 Property Listings",
-        "60 Days Availability",
-        "20 Featured Property",
-        "Limited Support",
+        "Free Plan Features",
+        "Data Insights",
+        "Financing",
       ],
+      isCurrentPlan: false,
     },
     {
       id: 3,
-      price: "291",
-      title: "Premium Plan",
+      price: "Contact Us",
+      title: "Enterprise",
       features: [
-        "50 Property Listings",
-        "60 Days Availability",
-        "20 Featured Property",
-        "Limited Support",
+        "Unlimited API Access",
+        "Access To Beta Features",
+        "Dedicated Customer Support",
+        
       ],
+      isCurrentPlan: false,
     },
   ];
   return (
@@ -40,10 +42,11 @@ const Pricing = () => {
         <div className="col-sm-6 col-md-6 col-lg-4" key={item.id}>
           <div className="pricing_table">
             <div className="pricing_header">
-              <div className="price">${item.price}</div>
-              <h4>{item.title}</h4>
+              <div className="price">{item.title}</div>
+              
             </div>
             <div className="pricing_content">
+              <h4>Details</h4>
               <ul className="mb0">
                 {item.features.map((val, i) => (
                   <li key={i}>{val}</li>
@@ -51,8 +54,8 @@ const Pricing = () => {
               </ul>
             </div>
             <div className="pricing_footer">
-              <a className="btn pricing_btn btn-block" href="#">
-                Select Package
+              <a className={item.isCurrentPlan ? "pricing_btn btn-block" : "btn pricing_btn btn-block"} href={item.isCurrentPlan ? "#" : "/contact"}>
+                {item.isCurrentPlan ? "Current Plan" : "Contact Us"}
               </a>
             </div>
           </div>

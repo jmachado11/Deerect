@@ -12,8 +12,8 @@ const metadata = {
 const index = () => {
   return (
     <>
-      <HomeMain />
-      
+      {/* <HomeMain /> */}
+      <GridV1 />
     </>
   );
 };

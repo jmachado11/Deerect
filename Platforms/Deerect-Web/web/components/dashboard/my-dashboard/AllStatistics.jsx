@@ -69,6 +69,7 @@ const AllStatistics = () => {
           setTotalFavorites(0);
         } else {
           const listingIds = userListings.map((listing) => listing.id);
+          console.log('listingIds:', listingIds);
 
           if (listingIds.length === 0) {
             // The user has no listings
@@ -99,6 +100,7 @@ const AllStatistics = () => {
               console.error('Error fetching views count:', viewsError);
               setTotalViews(0);
             } else {
+              console.log('viewsCount:', viewsCount);
               setTotalViews(viewsCount || 0);
             }
 
@@ -144,13 +146,13 @@ const AllStatistics = () => {
       timer: soldListingCount,
       name: 'Sold Tax Liens',
     },
-    {
-      id: 3,
-      blockStyle: 'style2',
-      icon: 'flaticon-view',
-      timer: totalViews,
-      name: 'Total Views',
-    },
+    // {
+    //   id: 3,
+    //   blockStyle: 'style2',
+    //   icon: 'flaticon-view',
+    //   timer: totalViews,
+    //   name: 'Total Views',
+    // },
     {
       id: 4,
       blockStyle: 'style3',
