@@ -142,30 +142,30 @@ const Index = () => {
   }, [getState]);
 
   const handleFavorite = async (listingId) => {
-    const user = supabase.auth.getUser();
-    if (!user) {
+    const { data, error: authError } = await supabase.auth.getUser();
+    
+    if (authError || !data?.user) {
       alert('Please sign in to add favorites.');
       return;
     }
-
     try {
       const { error } = await supabase
         .from('Favorite')
-        .insert({listing_id: listingId});
-
+        .insert({ listing_id: listingId, user_id: data.user.id });
       if (error) {
-        if(error.message.includes("duplicate")){
+        if (error.code === '23505') { 
           alert('Listing already in your favorites.');
-          return;
+        } else {
+          alert('Failed to add favorite. Please try again.');
         }
-        alert('Failed to add favorite. Please try again.');
-      } else {
-        alert('Listing added to favorites!');
+        return;
       }
+      alert('Listing added to favorites!');
     } catch (err) {
       alert('An unexpected error occurred. Please try again.');
     }
   };
+  
 
   const handleOffer = async (listingId) => {
     const user = supabase.auth.getUser();

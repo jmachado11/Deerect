@@ -110,14 +110,12 @@ const ListingCard = ({
 
           <div className="fp_footer">
             <div className="fp_pdate float-end d-flex align-items-center gap-2">
-              {/* NEGATE USER ----------------------------- */}
-              {user && ( 
-                <a href='/login' className="btn btn-outline-primary">
+              {!user && ( 
+                <a href='/login' className="btn btn-outline-primary signintosave">
                   Sign In To Save
                 </a>
               )}
-              {/* NEGATE USER ----------------------------- */}
-              {!user && item.isScraped && (
+              {user && item.isScraped && (
                 <>
                   <input
                     type="number"
