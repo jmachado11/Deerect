@@ -257,7 +257,6 @@ const Index = () => {
         </div>
       </div>
     </div>
-
               <div className="row">
                 {currentListings.map((item) => (
                   <ListingCard

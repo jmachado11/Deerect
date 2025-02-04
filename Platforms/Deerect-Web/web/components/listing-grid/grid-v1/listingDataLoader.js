@@ -50,6 +50,8 @@ import WVData from "@/data/scrapedListings/WVscraped_data.json";
 import WIData from "@/data/scrapedListings/WIscraped_data.json";
 import WYData from "@/data/scrapedListings/WYscraped_data.json";
 
+import axios from "axios";
+
 // Mapping of state abbreviations to their data files
 const STATE_FILES = {
   AL: ALData,
@@ -101,36 +103,93 @@ const STATE_FILES = {
   WA: WAData,
   WV: WVData,
   WI: WIData,
-  WY: WYData
+  WY: WYData,
+};
+const stateRates = {
+  AL: 7.750,
+  AK: 7.813,
+  AZ: 7.750,
+  AR: 7.875,
+  CA: 7.750,
+  CO: 7.750,
+  CT: 7.875,
+  DE: 7.750,
+  FL: 7.625,
+  GA: 7.625,
+  HI: 7.875,
+  ID: 7.875,
+  IL: 7.750,
+  IN: 7.875,
+  IA: 7.875,
+  KS: 7.875,
+  KY: 7.700,
+  LA: 7.813,
+  ME: 7.875,
+  MD: 7.750,
+  MA: 7.875,
+  MI: 7.750,
+  MN: 7.875,
+  MS: 7.875,
+  MO: 7.875,
+  MT: 7.875,
+  NE: 7.875,
+  NV: 7.750,
+  NH: 7.875,
+  NJ: 7.700,
+  NM: 7.875,
+  NY: 7.875,
+  NC: 7.662,
+  ND: 7.875,
+  OH: 7.875,
+  OK: 7.750,
+  OR: 7.875,
+  PA: 7.750,
+  RI: 7.875,
+  SC: 7.750,
+  SD: 7.875,
+  TN: 7.700,
+  TX: 7.550,
+  UT: 7.875,
+  VT: 7.875,
+  VA: 7.750,
+  WA: 7.875,
+  WV: 7.750,
+  WI: 7.875,
+  WY: 7.875
 };
 
 export const loadScrapedListings = (selectedState) => {
   let allListings = [];
+
 
   const stateData = STATE_FILES[selectedState];
   if (!stateData) {
     return allListings;
   }
 
-  const validListings = stateData
-    .filter(listing => 
-      listing.address && // Ensure the listing has an address
-      (listing.type === "Tax Lien" || listing.type === "Preforeclosure") // Include specific types
-    )
-    .map(listing => ({
-      id: `scraped-${listing.url.split('/').pop()}`, // Create unique ID
-      property_address: listing.address,
-      interest_rate: "not available",
-      property_value: listing["Assessed Value:"] || "N/A",
-      property_type: listing["property type"] || "N/A",
-      city: listing.address.split(' ').slice(-3, -2)[0],
-      state: listing.address.split(' ').slice(-2, -1)[0],
-      zip_code: listing.address.split(' ').slice(-1)[0],
-      county: "N/A",
-      amount_owed: listing.price || listing["Mortgage Balance:"] || "N/A",
-      property_condition: "N/A",
-      isScraped: true // Flag to identify scraped listings
-    }));
+  const validListings = 
+    stateData
+      .filter(
+        (listing) =>
+          listing.address && 
+          (listing.type === "Tax Lien" || listing.type === "Preforeclosure" || listing.type == "PreforeclosureNEW") 
+      )
+      .map(listing => (
+        {
+          id: `scraped-${listing.url.split("/").pop()}`,
+          property_address: listing.address,
+          type: listing.type,
+          property_value: listing["Assessed Value:"] || "N/A",
+          property_type: listing["property type"] || "N/A",
+          city: listing.address.split(" ").slice(-3, -2)[0],
+          state: listing.address.split(" ").slice(-2, -1)[0],
+          zip_code: listing.address.split(" ").slice(-1)[0],
+          county: "N/A", 
+          amount_owed: listing.price || listing["Mortgage Balance:"] || "N/A",
+          isScraped: true,
+          interest: stateRates[selectedState] + '%',
+        }));
+
 
   allListings = [...allListings, ...validListings];
 
