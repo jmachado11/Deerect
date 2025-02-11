@@ -142,25 +142,26 @@ const Index = () => {
   }, [getState]);
 
   const handleFavorite = async (listingId) => {
-    const { data, error: authError } = await supabase.auth.getUser();
-    
-    if (authError || !data?.user) {
+    const user = supabase.auth.getUser();
+    if (!user) {
       alert('Please sign in to add favorites.');
       return;
     }
+
     try {
       const { error } = await supabase
         .from('Favorite')
-        .insert({ listing_id: listingId, user_id: data.user.id });
+        .insert({listing_id: listingId});
+
       if (error) {
-        if (error.code === '23505') { 
+        if(error.message.includes("duplicate")){
           alert('Listing already in your favorites.');
-        } else {
-          alert('Failed to add favorite. Please try again.');
+          return;
         }
-        return;
+        alert('Failed to add favorite. Please try again.');
+      } else {
+        alert('Listing added to favorites!');
       }
-      alert('Listing added to favorites!');
     } catch (err) {
       alert('An unexpected error occurred. Please try again.');
     }
