@@ -166,6 +166,7 @@ const Index = () => {
       alert('An unexpected error occurred. Please try again.');
     }
   };
+  
 
   const handleOffer = async (listingId) => {
     const user = supabase.auth.getUser();
@@ -257,7 +258,6 @@ const Index = () => {
         </div>
       </div>
     </div>
-
               <div className="row">
                 {currentListings.map((item) => (
                   <ListingCard

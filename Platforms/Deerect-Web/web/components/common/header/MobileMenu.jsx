@@ -32,7 +32,7 @@ const MobileMenu = () => {
   return (
     // <!-- Main Header Nav For Mobile -->
     <div className="stylehome1 h0 mega-menu-wrapper">
-      <div className="mobile-menu">
+      <div className="mobile-menu navbar-wrap" style={{ padding: "0px 15px 0px 15px" }}>
         <div className="header stylehome1">
           <div className="main_logo_home2 text-center">
             <Image

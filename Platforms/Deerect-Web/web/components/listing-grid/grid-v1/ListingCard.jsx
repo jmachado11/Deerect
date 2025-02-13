@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { createClient } from '@/utils/supabase/client';
+import "./listing.css"
 
 const ListingCard = ({ 
   item, 
@@ -80,25 +81,22 @@ const ListingCard = ({
           <div className="tc_content">
             <p className="text-thm">{item.property_type}</p>
             <h4>
-              Interest Rate: {item.interest_rate}
+              Interest Rate: {item.interest}
             </h4>
             <p>
               <span className="flaticon-placeholder"></span>
-              {item.property_address}
+              {" "}{item.property_address}
             </p>
 
             <ul className="prop_details mb0">
               <li className="list-inline-item">
-                <a href="#">County: {item.county}</a>
+                <a href="#">Property Type: {item.property_type}</a>
               </li>
               <li className="list-inline-item">
-                <a href="#">Property Condition: {item.property_condition}</a>
+                <a href="#">Price: {item.amount_owed}</a>
               </li>
               <li className="list-inline-item">
-                <a href="#">Property Value: {item.property_value}</a>
-              </li>
-              <li className="list-inline-item">
-                <a href="#">Amount Owed: {item.amount_owed}</a>
+              {item.type == "PreforclosureNew" ? <a href="#">Mortage Balance{item["Mortgage Balance"]}</a> : null}
               </li>
               {!item.isScraped && (
                 <li className="list-inline-item">
@@ -112,31 +110,30 @@ const ListingCard = ({
 
           <div className="fp_footer">
             <div className="fp_pdate float-end d-flex align-items-center gap-2">
-              {!user && (
-                <a href='/login' className="btn btn-outline-primary">
+              {!user && ( 
+                <a href='/login' className="btn btn-outline-primary signintosave">
                   Sign In To Save
                 </a>
               )}
-              
-              {user && !item.isScraped && (
+              {user && item.isScraped && (
                 <>
                   <input
                     type="number"
-                    className="form-control"
-                    placeholder="Enter offer amount"
+                    className="form-control offerfield"
+                    placeholder="Offer Amount"
                     value={offerAmount}
                     onChange={(e) => onOfferChange(e.target.value)}
                     style={{ width: '150px' }}
                   />
                   <button 
                     onClick={onOfferSubmit}
-                    className="btn btn-primary"
+                    className="btn offer"
                   >
                     Make Offer
                   </button>
                   <span 
                     onClick={onFavorite} 
-                    className="btn btn-primary flaticon-heart"
+                    className="btn flaticon-heart heart"
                   ></span>
                 </>
               )}

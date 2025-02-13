@@ -1,0 +1,46 @@
+.offer:hover{
+    background-color: white !important;
+    color: rgb(255, 90, 94) !important;
+}
+
+.offer{
+    background-color: rgb(255, 90, 94);
+    color: white;
+    height: 100% !important;
+}
+.heart {
+    background-color: white !important;
+    color: rgb(255, 90, 94) !important;
+    border: 1px solid rgb(255, 90, 94) !important;
+}
+
+.heart:hover{
+    background-color: rgb(255, 90, 94) !important;
+    color: white !important;
+    opacity: 0.6;
+}
+
+.favorited{
+    background-color: rgb(255, 90, 94) !important;
+    color: white !important;
+}
+
+.offerfield{
+    height: 37px;
+}
+
+.fp-footer{
+    width: 100%;
+}
+
+.signintosave{
+    background-color: white !important;
+    color: rgb(255, 90, 94) !important;
+    border: 1px solid rgb(255, 90, 94) !important;
+}
+
+@media(max-height: 480px) {
+    body, html {
+        padding: 100px !important;
+    }
+}
