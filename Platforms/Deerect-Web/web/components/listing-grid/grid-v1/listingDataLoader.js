@@ -50,7 +50,6 @@ import WVData from "@/data/scrapedListings/WVscraped_data.json";
 import WIData from "@/data/scrapedListings/WIscraped_data.json";
 import WYData from "@/data/scrapedListings/WYscraped_data.json";
 
-import axios from "axios";
 
 // Mapping of state abbreviations to their data files
 const STATE_FILES = {
