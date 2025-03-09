@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { createClient } from '@/utils/supabase/client';
 import "./listing.css"
 
-const ListingCard = ({ 
-  item, 
-  offerAmount, 
-  onOfferChange, 
-  onOfferSubmit, 
-  onFavorite, 
-  isGridView 
+const ListingCard = ({
+  item,
+  offerAmount,
+  onOfferChange,
+  onOfferSubmit,
+  onFavorite,
+  isGridView
 }) => {
   const supabase = createClient();
   const [user, setUser] = useState(null);
@@ -73,9 +73,8 @@ const ListingCard = ({
       className={`${isGridView ? "col-12 feature-list" : "col-md-6 col-lg-6"}`}
     >
       <div
-        className={`feat_property home7 style4 ${
-          isGridView ? "d-flex align-items-center" : ""
-        }`}
+        className={`feat_property home7 style4 ${isGridView ? "d-flex align-items-center" : ""
+          }`}
       >
         <div className="details">
           <div className="tc_content">
@@ -96,7 +95,7 @@ const ListingCard = ({
                 <a href="#">Price: {item.amount_owed}</a>
               </li>
               <li className="list-inline-item">
-              {item.type == "PreforclosureNew" ? <a href="#">Mortage Balance{item["Mortgage Balance"]}</a> : null}
+                {item.type == "PreforclosureNew" ? <a href="#">Mortage Balance{item["Mortgage Balance"]}</a> : null}
               </li>
               {!item.isScraped && (
                 <li className="list-inline-item">
@@ -110,7 +109,7 @@ const ListingCard = ({
 
           <div className="fp_footer">
             <div className="fp_pdate float-end d-flex align-items-center gap-2">
-              {!user && ( 
+              {!user && (
                 <a href='/login' className="btn btn-outline-primary signintosave">
                   Sign In To Save
                 </a>
@@ -125,22 +124,22 @@ const ListingCard = ({
                     onChange={(e) => onOfferChange(e.target.value)}
                     style={{ width: '150px' }}
                   />
-                  <button 
+                  <button
                     onClick={onOfferSubmit}
                     className="btn offer"
                   >
                     Make Offer
                   </button>
-                  <span 
-                    onClick={onFavorite} 
+                  <span
+                    onClick={onFavorite}
                     className="btn flaticon-heart heart"
                   ></span>
                 </>
               )}
 
               {user && item.isScraped && (
-                <span 
-                  onClick={handleScrapedFavorite} 
+                <span
+                  onClick={handleScrapedFavorite}
                   className="btn btn-primary flaticon-heart"
                 ></span>
               )}

@@ -4,7 +4,7 @@ const WhyChoose = ({ style = "" }) => {
       id: 1,
       icon: "flaticon-high-five",
       title: "Our Services",
-      descriptions: `We simplify the tax lien by cutting making it as simple as investing in stocks.`,
+      descriptions: `We simplify the tax lien process by making it as simple as investing in stocks.`,
     },
     {
       id: 2,
