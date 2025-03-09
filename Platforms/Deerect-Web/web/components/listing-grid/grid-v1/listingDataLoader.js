@@ -160,7 +160,6 @@ const stateRates = {
 export const loadScrapedListings = (selectedState) => {
   let allListings = [];
 
-
   const stateData = STATE_FILES[selectedState];
   if (!stateData) {
     return allListings;
