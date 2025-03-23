@@ -169,42 +169,43 @@ const Index = () => {
   
 
   const handleOffer = async (listingId) => {
-    const user = supabase.auth.getUser();
-    if (!user) {
-      alert('Please sign in to make an offer.');
-      return;
-    }
-
-    const offerAmount = offerAmounts[listingId];
-    if (!offerAmount || isNaN(offerAmount)) {
-      alert('Please enter a valid offer amount.');
-      return;
-    }
-
     try {
+      const { data: user, error: userError } = await supabase.auth.getUser();
+      if (userError || !user) {
+        alert('Please sign in to make an offer.');
+        return;
+      }
+  
+      const offerAmount = offerAmounts[listingId];
+  
+      if (!offerAmount || isNaN(offerAmount)) {
+        alert('Please enter a valid offer amount.');
+        return;
+      }
+  
       const { error } = await supabase
         .from('Offer')
         .insert({
           listing_id: listingId,
           offer_amount: parseFloat(offerAmount),
-          status: 'PENDING'
+          status: 'PENDING',
         });
-
+  
       if (error) {
         alert('Failed to submit offer. Please try again.');
       } else {
         alert('Offer submitted successfully!');
-        setOfferAmounts(prev => ({
+        setOfferAmounts((prev) => ({
           ...prev,
-          [listingId]: ''
+          [listingId]: '', 
         }));
       }
     } catch (err) {
       alert('An unexpected error occurred. Please try again.');
+      console.error(err); 
     }
   };
-
-  // Pagination calculations
+  
   const totalPages = Math.ceil(listings.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;

@@ -114,7 +114,7 @@ const ListingCard = ({
                   Sign In To Save
                 </a>
               )}
-              {user && item.isScraped && (
+              {user && !item.isScraped && (
                 <>
                   <input
                     type="number"
@@ -139,8 +139,8 @@ const ListingCard = ({
 
               {user && item.isScraped && (
                 <span
+                  className="btn heart flaticon-heart"
                   onClick={handleScrapedFavorite}
-                  className="btn btn-primary flaticon-heart"
                 ></span>
               )}
             </div>
