@@ -29,6 +29,7 @@ const ListingCard = ({
 
     try {
       // Check if address already exists for this user
+      
       const { data: existingAddresses, error: checkError } = await supabase
         .from('Interested Scraped Address')
         .select('id')

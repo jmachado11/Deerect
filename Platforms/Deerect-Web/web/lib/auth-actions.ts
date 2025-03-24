@@ -60,6 +60,7 @@ export async function signup(data: SignUpFormData) {
         full_name: fullName,
         email,
         phone_number: phoneNumber,
+        subscription: "free",
       },
       
     },
