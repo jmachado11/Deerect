@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server"; 
+import { NextRequest, NextResponse } from "next/server"; 
 import Stripe from "stripe";
 
 // Define price IDs for different plans
@@ -14,7 +14,7 @@ console.log("Available price ID env vars:", {
   STRIPE_ENTERPRISE_PRICE_ID: !!process.env.STRIPE_ENTERPRISE_PRICE_ID
 });
 
-export async function POST(request: { json: () => any; }) {
+export async function POST(request: NextRequest) {
   try {
     // Check if Stripe key exists
     if (!process.env.STRIPE_SECRET_KEY) {
