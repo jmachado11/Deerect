@@ -21,7 +21,10 @@ function Contact({ toggleContact }) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-
+  const sendMessage=()=>{
+    
+    toggleContact();
+  }
   return (
     <div className="waitlist-contact-page">
       <div className="waitlist-contact-container">
@@ -78,7 +81,7 @@ function Contact({ toggleContact }) {
             ></textarea>
           </div>
           <div className="waitlist-contact-action">
-            <button className="waitlist-contact-send-message">
+            <button onClick={sendMessage} className="waitlist-contact-send-message">
               Send message
             </button>
             <button onClick={toggleContact} className="waitlist-contact-cancel">

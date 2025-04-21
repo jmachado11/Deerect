@@ -7,6 +7,7 @@
   padding:0;
   border-top:1px solid #7a7a7a;
 }
+
 .footer hr{
   padding:0;
   margin:0;
@@ -88,20 +89,26 @@
 .footer-right div{
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 5px;
 }
 .footer-right h4{
   font-size: clamp(0.875rem,1.5vw,1rem);
   font-weight: 500;
   color:white;
-  margin-bottom:0;
+  margin-bottom:10px;
 }
-.footer-right h5{
+
+.footer-right a{
   color:#b7b7b7;
   font-size: clamp(0.75rem,1.5vw,0.875rem);
   font-weight: 500;
   margin-bottom:0;
 }
+.footer-bottom a{
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width:1350px) {
   .footer-top{
     padding:40px clamp(5rem,10vw,10rem)

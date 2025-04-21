@@ -152,11 +152,11 @@ function Header() {
             <i onClick={toggleMenu} className="fa-solid fa-bars header-menu-bars"></i>
             <div className={`header-sm-buttons ${menuActive?'header-sm-buttons-active':''}`}>
               <button onClick={toggleContact} className="contact-button-sm">Contact us</button>
-              <a className="join-community-sm">Join the community</a>
+              <a  href="https://discord.gg/ZDKg7X3w" target="_blank" rel="noopener noreferrer" className="join-community-sm">Join the community</a>
             </div>
           </div>
           <button onClick={toggleContact} className="contact-button">Contact us</button>
-          <a className="join-community">Join the community</a>
+          <a  href="https://discord.gg/ZDKg7X3w" target="_blank" rel="noopener noreferrer" className="join-community">Join the community</a>
         </div>
       </div>
       {
