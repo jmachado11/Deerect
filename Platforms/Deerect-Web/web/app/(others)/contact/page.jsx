@@ -1,6 +1,6 @@
 'use client'
 import dynamic from "next/dynamic";
-import Contact from "@/components/contact";
+import Contact from "@/components/NewContact/contact";
 
 const metadata = {
   title: 'Contact || FindHouse - Real Estate React Template',

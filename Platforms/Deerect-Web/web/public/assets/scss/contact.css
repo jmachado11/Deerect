@@ -1,0 +1,76 @@
+.contact-page{
+  background-color: #171717;
+  width: 100dvw;
+  height:100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.contact-title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-title h1{
+  color:white;
+  font-size:2rem;
+  font-weight:600;
+}
+.contact-title h2{
+  color:#b7b7b7;
+  font-size:1.125rem;
+  font-weight: 400;
+}
+.contact-inputs{
+  display: flex;
+  flex-direction: column;
+  row-gap:25px;
+}
+.contact-information{
+  display: flex;
+  column-gap: 25px;
+}
+.contact-inputs input, textarea{
+  width:350px;
+  height:45px;
+  background-color: transparent;
+  border:1px solid rgba(255, 255, 2555, 0.15);
+  border-radius: 10px;
+  font-size:0.875rem;
+  padding-left:15px;
+  color:white;
+}
+
+.contact-message textarea{
+  width: 100%;
+  min-height: 150px;
+  vertical-align: top;
+  padding-top:10px;
+}
+.contact-input-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+.contact-input-container p{
+  margin:0;
+  color:#b7b7b7;
+  font-size:0.75rem;
+}
+.send-message-button{
+  background-color: #FE5A5A;
+  color:white;
+  border:none;
+  width:150px;
+  height:40px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+.send-message-button:hover{
+  background-color: #fe5a5aef;
+}
+.send-message-button:focus{
+  outline: none;
+}
