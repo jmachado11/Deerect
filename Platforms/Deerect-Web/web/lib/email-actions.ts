@@ -33,18 +33,29 @@ export async function sendInviteEmail(email: string) {
   return [1,data];
 }
 
-export async function sendEmail(to: string, subject: string, text: string): Promise<SendEmailResult> {
+export async function sendEmail(to: string, subject: string, text: string, isHtml: boolean = false) {
   try {
-    await resend.emails.send({
-      from: "no-reply@deerect.net", // Replace with a verified sender email from Resend
+    const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+    
+    const { data, error } = await resend.emails.send({
+      from: 'Deerect <onboarding@resend.dev>',
       to,
       subject,
-      text,
+      ...(isHtml ? { html: text } : { text }),
     });
-    return { success: true };
+
+    if (error) {
+      console.error('Resend API Error:', error);
+      return { success: false, error: error.message };
+    }
+
+    return { success: true, data };
   } catch (error) {
-    console.error("Error sending email:", error);
-    return { success: false, error };
+    console.error('Email sending error:', error);
+    return { 
+      success: false, 
+      error: error instanceof Error ? error.message : 'Unknown error occurred' 
+    };
   }
 }
 

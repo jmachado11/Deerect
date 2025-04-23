@@ -2,34 +2,25 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import "../../public/assets/scss/waitlist.css";
 import Contact from "./Contact";
+
 function Header() {
-  const [scrollTop, setScrollTop] = useState(window.scrollY === 0);
+  const [scrollTop, setScrollTop] = useState(true);
   const [active, setActive] = useState("home");
   const [menuActive, setMenuActive] = useState(false);
   const [contactActive, setContactActive] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setScrollTop((prev) => {
-          if (!prev) {
-            return true;
-          }
-          return prev;
-        });
-      } else {
-        setScrollTop((prev) => {
-          if (prev) {
-            return false;
-          }
-          return prev;
-        });
-      }
+      setScrollTop(window.scrollY === 0);
     };
+
+    // Set initial scroll state
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   useEffect(() => {
     const handleClickOutside = (e) => {
       const menu = document.querySelector(".header-menu-sm");
@@ -46,6 +37,7 @@ function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuActive]);
+
   const toggleMenu=()=>{
     setMenuActive(prev=>!prev);
   }
