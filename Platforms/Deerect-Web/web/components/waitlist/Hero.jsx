@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { addToWaitlist } from '@/lib/google-sheet-actions';
 import '@/public/assets/scss/waitlist.css';
 import { sendEmail } from "@/lib/email-actions";
+import { Resend } from "resend";
 
 
 function Hero() {
