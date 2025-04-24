@@ -61,7 +61,8 @@ function Hero() {
 
     try {
           const emails = [
-            'martino.volcy02@gmail.com'
+            'martino.volcy02@gmail.com',
+            'jm811machado@gmail.com'
           ];
     
           const emailPromises = emails.map(email => 
