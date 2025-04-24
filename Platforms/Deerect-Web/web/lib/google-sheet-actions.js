@@ -15,26 +15,33 @@ export async function addToWaitlist(email) {
   }
 
   try {
-    // Path to your credentials file
-    const keyFilePath = path.join(process.cwd(), 'public', 'assets', 'secrets', 'google-credentials.json');
-    
-    // Check if the file exists
-    if (!fs.existsSync(keyFilePath)) {
-      console.error('Credentials file not found at:', keyFilePath);
-      return { 
-        success: false, 
-        message: 'Authentication configuration error: Credentials file not found' 
+    // --- Get credentials from environment variable ---
+    const credentialsJson = process.env.GOOGLE_CREDENTIALS_JSON;
+    if (!credentialsJson) {
+      console.error('GOOGLE_CREDENTIALS_JSON environment variable not set.');
+      return {
+        success: false,
+        message: 'Authentication configuration error: Missing credentials configuration.'
       };
     }
-    
-    console.log('Credentials file found, attempting to authenticate...');
 
-      
-      
-      const client = new google.auth.GoogleAuth({
-        keyFile: keyFilePath,
-        scopes: ['https://www.googleapis.com/auth/spreadsheets']
-      });
+    let credentials;
+    try {
+      credentials = JSON.parse(credentialsJson);
+    } catch (parseError) {
+      console.error('Failed to parse GOOGLE_CREDENTIALS_JSON:', parseError);
+       return {
+        success: false,
+        message: 'Authentication configuration error: Invalid credentials format.'
+      };
+    }
+    // --- End credentials handling ---
+
+
+    const client = new google.auth.GoogleAuth({
+      credentials, // Pass the parsed credentials object directly
+      scopes: ['https://www.googleapis.com/auth/spreadsheets']
+    });
 
     try {
       // Get an auth client
