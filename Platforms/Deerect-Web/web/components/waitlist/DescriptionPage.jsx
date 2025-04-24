@@ -34,11 +34,10 @@ function DescriptionPage() {
           <div>
             <img src="/assets/images/waitlist/laptop.png"></img>
           </div>
-          <h4>Data-Driven Insights & Smart Decisions</h4>
+          <h4>Simple, Seamless Experience</h4>
           <p>
-            Make informed investments with our market analysis and risk
-            assessments, giving you confidence in every
-            deal.
+            Easily browse, research, and bid with our intuitive platform
+            designed for investors of all experience levels.
           </p>
         </div>
         <div className="description-page-card">
@@ -48,8 +47,7 @@ function DescriptionPage() {
           <h4>Data-Driven Insights & Smart Decisions</h4>
           <p>
             Make informed investments with our market analysis and risk
-            assessments, giving you confidence in every
-            deal.
+            assessments, giving you confidence in every deal.
           </p>
         </div>
       </div>

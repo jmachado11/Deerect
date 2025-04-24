@@ -176,6 +176,7 @@
   background-color: rgba(255,255,255,0.1);
 }
 .header-sm-buttons{
+  min-width: 234px;
   padding:10px;
   bottom:0;
   right:0;
@@ -301,6 +302,7 @@
   font-size:clamp(0.75rem,1.5vw,0.925rem);
   font-weight:500;
   transition: 0.15s ease all;
+  color:#121212;
 }
 .hero-action button:hover{
   background-color: #31313170;
@@ -551,6 +553,7 @@
   .hero-input-container {
     flex-direction: column;
     row-gap: 20px;
+    align-items: center;
   }
 }
 
