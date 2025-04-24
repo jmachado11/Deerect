@@ -5,11 +5,14 @@ import { addToWaitlist } from '@/lib/google-sheet-actions';
 import '@/public/assets/scss/waitlist.css';
 import { sendEmail } from "@/lib/email-actions";
 
+
 function Hero() {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
   const [error, setError] = useState('');
+
+  const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -60,34 +63,20 @@ function Hero() {
 
 
     try {
-          const emails = [
-            'martino.volcy02@gmail.com',
-            'jm811machado@gmail.com'
-          ];
-    
-          const emailPromises = emails.map(email => 
-            sendEmail(
-              email, 
-              `New Waitlist Submission `,
-              `
-              
-              <p><strong>Email:</strong> ${userEmail}</p>
-              `,
-              true // Set to true to send as HTML
-            )
-          );
-    
-          const results = await Promise.allSettled(emailPromises);
-    
-          
-    
-         
-      
-          
-        } catch {
-          console.error('Error in sending email');
-          
-        } finally {
+      await resend.emails.send({
+        from: 'no-reply@deerect.net',
+        to: ['martino.volcy02@gmail.com','jm811machado@gmail.com'],
+        subject: `New waitlist sign up`,
+        html: `
+          <p><strong>Email:</strong> ${userEmail}</p>
+        `,
+      });
+
+      res.status(200).json({ success: true });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({ error: 'Error sending email' });
+    } finally {
           setIsSubmitting(false);
         }
       
