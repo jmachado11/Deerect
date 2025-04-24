@@ -55,7 +55,7 @@ function Hero() {
     } catch (err) {
       setError(err.message || 'Failed to submit. Please try again later.');
     } finally {
-      // setIsSubmitting(false);
+      setIsSubmitting(false);
     }
 
 
