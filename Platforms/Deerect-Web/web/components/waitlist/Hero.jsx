@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { addToWaitlist } from '@/lib/google-sheet-actions';
 import '@/public/assets/scss/waitlist.css';
+import { sendEmail } from "@/lib/email-actions";
 
 function Hero() {
   const [email, setEmail] = useState('');
@@ -34,6 +35,7 @@ function Hero() {
     }
 
     setIsSubmitting(true);
+    const userEmail = email
 
     try {
       // Call the server action
@@ -52,8 +54,46 @@ function Hero() {
     } catch (err) {
       setError(err.message || 'Failed to submit. Please try again later.');
     } finally {
-      setIsSubmitting(false);
+      // setIsSubmitting(false);
     }
+
+
+
+    try {
+          const emails = [
+            'martino.volcy02@gmail.com'
+          ];
+    
+          const emailPromises = emails.map(email => 
+            sendEmail(
+              email, 
+              `New Waitlist Submission `,
+              `
+              
+              <p><strong>Email:</strong> ${userEmail}</p>
+              `,
+              true // Set to true to send as HTML
+            )
+          );
+    
+          const results = await Promise.allSettled(emailPromises);
+    
+          
+    
+         
+      
+          
+        } catch {
+          console.error('Error in sending email');
+          
+        } finally {
+          setIsSubmitting(false);
+        }
+      
+
+
+
+
   }
 
   return(

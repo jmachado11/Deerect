@@ -53,7 +53,7 @@ function DescriptionPage() {
           </p>
         </div>
       </div>
-      <div className="faq-container">
+      {/* <div className="faq-container">
         <h3>Frequently Asked Questions</h3>
         <div className="faqs-grid">
           <div className="faq">
@@ -121,7 +121,7 @@ function DescriptionPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
