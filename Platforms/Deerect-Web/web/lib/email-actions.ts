@@ -38,7 +38,7 @@ export async function sendEmail(to: string, subject: string, text: string, isHtm
     const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
     
     const { data, error } = await resend.emails.send({
-      from: 'Deerect <onboarding@resend.dev>',
+      from: 'no-reply@deerect.net',
       to,
       subject,
       ...(isHtml ? { html: text } : { text }),
