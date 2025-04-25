@@ -299,7 +299,7 @@
   height:clamp(2.875rem,4vw,3.125rem);
   border-radius: 10px;
   border:none;
-  font-size:clamp(0.75rem,1.5vw,0.925rem);
+  font-size:clamp(0.75rem,1.125vw,0.925rem);
   font-weight:500;
   transition: 0.15s ease all;
   color:#121212;
@@ -341,7 +341,7 @@
   padding-bottom:30px;
 }
 .description-page-card{
-  height:clamp(17rem,20vw,20rem);
+  height:clamp(17rem,24vw,20rem);
   background-color: white;
   padding:30px;
   box-sizing: border-box;
@@ -381,6 +381,7 @@
   text-align: center;
 }
 .faqs-grid{
+  width: 100%;
   display: grid;
   grid-template-columns:repeat(auto-fit, minmax(600px, 1fr));
   column-gap: 80px;
@@ -509,9 +510,19 @@
   background:white;
   color:#121212;
 }
+@media(max-width:1070px){
+  .description-h3-break{
+    display: none;
+  }
+}
+@media(max-width:860px){
+  .hero-h1-break{
+    display: none;
+  } 
+}
 @media(max-width:785px){
   .description-page{
-    padding:clamp(2rem, 4vw,4rem) clamp(2.5rem, 5vw, 5rem);
+    padding:clamp(2.5rem, 4vw,4rem) clamp(2.5rem, 5vw, 5rem);
     padding-bottom:clamp(7rem,10vw,10rem);
 
   }
@@ -535,9 +546,6 @@
   .header-menu{
     display:flex;
   }
-  .hero-h1-break{
-    display: none;
-  }
   .hero-h2-break{
     display:none;
   }
@@ -555,6 +563,7 @@
     row-gap: 20px;
     align-items: center;
   }
+  
 }
 
 .hero-input-container {
